@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@layer components {
+  .logo {
+    @apply flex items-center;
+  }
+
+  .logo:hover img {
+    transform: rotate(15deg) scale(1.5);
+    transition: 0.3s;
+  }
+
+  .nav-sns-link {
+    @apply p-2 w-8 h-8 border-gray border-[1px] rounded-[50%] duration-300 hover:scale-150;
+  }
+}
