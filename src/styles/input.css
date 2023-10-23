@@ -10,6 +10,10 @@
 }
 
 @layer components {
+  .grid-box {
+    @apply md:max-w-grid-md lg:max-w-grid-lg;
+  }
+
   .logo {
     @apply flex items-center;
   }
@@ -17,6 +21,10 @@
   .logo:hover img {
     transform: rotate(15deg) scale(1.5);
     transition: 0.3s;
+  }
+
+  .nav-paw {
+    @apply hidden lg:block lg:mr-4 w-5 h-5 duration-300;
   }
 
   .nav-sns-link {

@@ -6,11 +6,15 @@ module.exports = {
       colors: {
         primary: "#F2B4AE",
         secondary: "#F2DCC9",
-        pink: "#F29188",
+        lightPink: "#F29188",
         gray: "#DFE4EA",
         black: "#414141",
         lightGray: "#D9D9D9",
       },
+    },
+    maxWidth: {
+      "grid-lg": "1360px",
+      "grid-md": "736px",
     },
   },
   plugins: [],
