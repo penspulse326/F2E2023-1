@@ -16,6 +16,9 @@ module.exports = {
       "grid-lg": "1360px",
       "grid-md": "736px",
     },
+    fontFamily: {
+      sans: ["Noto Sans TC", "sans-serif"],
+    },
   },
   plugins: [],
 };
