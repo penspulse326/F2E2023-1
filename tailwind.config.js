@@ -4,12 +4,25 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#F2B4AE",
-        secondary: "#F2DCC9",
+        primary: {
+          DEFAULT: "#F2B4AE",
+          light: `rgba(242, 180, 174, 0.15)`,
+        },
+        brown: {
+          DEFAULT: "#F2DCC9",
+          light: "#FBF5EF",
+        },
         lightPink: "#F29188",
-        gray: "#DFE4EA",
-        black: "#414141",
+        black: {
+          DEFAULT: "#414141",
+          light: "rgba(65, 65, 65, 0.05)",
+        },
+        midGray: "#959292",
         lightGray: "#D9D9D9",
+      },
+      backgroundImage: {
+        circle: "url(../images/bg-circle.svg)",
+        dots: "url(../images/bg-dots.svg)",
       },
     },
     maxWidth: {
