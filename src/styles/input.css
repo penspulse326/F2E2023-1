@@ -48,6 +48,10 @@
     @apply duration-300 scale-150;
   }
 
+  .btn-donate {
+    @apply block mb-4 px-7 py-3 bg-black text-white rounded-md hover:bg-gray-900 duration-300
+  }
+
   .card-donate {
     @apply flex flex-col justify-center items-center md:px-8 2xl:px-12 py-3 bg-brown rounded-3xl;
   }
