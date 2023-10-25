@@ -87,6 +87,14 @@
   animation: slide 20s linear infinite;
 }
 
+.news-slider {
+  animation: newsSlide 15s linear infinite alternate;
+}
+
+.news-slider:hover {
+  animation-play-state: paused;
+}
+
 @keyframes jumping {
   0% {
     transform: scale(1);
@@ -107,5 +115,22 @@
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+
+@keyframes newsSlide {
+  0% {
+    transform: translateX(15%);
+  }
+
+  5% {
+    transform: translateX(15%);
+  }
+
+  95% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }

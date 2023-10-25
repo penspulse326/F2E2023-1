@@ -974,6 +974,10 @@ video {
   width: 0.75rem;
 }
 
+.w-\[200vw\]{
+  width: 200vw;
+}
+
 .w-\[75\%\]{
   width: 75%;
 }
@@ -1482,6 +1486,14 @@ video {
   animation: slide 20s linear infinite;
 }
 
+.news-slider {
+  animation: newsSlide 15s linear infinite alternate;
+}
+
+.news-slider:hover {
+  animation-play-state: paused;
+}
+
 @keyframes jumping {
   0% {
     transform: scale(1);
@@ -1506,9 +1518,22 @@ video {
   }
 }
 
-.hover\:bg-gray-900:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+@keyframes newsSlide {
+  0% {
+    transform: translateX(15%);
+  }
+
+  5% {
+    transform: translateX(15%);
+  }
+
+  95% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @media (min-width: 1024px){
