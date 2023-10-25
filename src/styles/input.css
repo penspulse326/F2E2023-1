@@ -5,30 +5,14 @@
 @tailwind utilities;
 
 @layer base {
-  *,
-  *::after,
-  *::before {
-    box-sizing: border-box;
-  }
-
   * {
     @apply font-sans;
-  }
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-
-  header {
-    background-position: 35% 100%;
   }
 }
 
 @layer components {
   .grid-box {
-    @apply md:max-w-grid-md lg:max-w-grid-lg;
+    @apply md:max-w-grid-md lg:max-w-grid-lg ;
   }
 
   .logo {
@@ -48,11 +32,76 @@
     @apply p-2 w-8 h-8 bg-white border-lightGray border-[1px] rounded-[50%] duration-300 hover:scale-150;
   }
 
+  .nav-donate:hover {
+    @apply bg-white text-lightPink;
+  }
+
+  .btn-goDonate {
+    @apply col-span-2 self-start flex justify-center items-center py-3 text-lightPink text-xl font-bold bg-white rounded-[6px];
+  }
+
+  .btn-goDonate:hover img {
+    @apply duration-300 rotate-90 scale-150;
+  }
+
+  .btn-goTop:hover {
+    @apply duration-300 scale-150;
+  }
+
+  .card-donate {
+    @apply flex flex-col justify-center items-center md:px-8 2xl:px-12 py-3 bg-brown rounded-3xl;
+  }
+
   .form-input {
     @apply px-4 py-3 w-full border-lightGray border-[1px] rounded-md;
   }
 
   .footer-link {
     @apply p-[10px] w-10 h-10 bg-white border-lightGray border-[1px] rounded-[50%] duration-300 hover:scale-110;
+  }
+}
+
+@layer utilities {
+  .writing-v {
+    writing-mode: vertical-lr;
+  }
+}
+
+.slogan {
+  background-attachment: fixed;
+}
+
+.policy {
+  background-attachment: fixed;
+}
+
+.slogan-paws {
+  animation: jumping 2s linear infinite;
+}
+
+.marquee ul {
+  animation: slide 20s linear infinite;
+}
+
+@keyframes jumping {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }

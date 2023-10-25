@@ -23,6 +23,8 @@ module.exports = {
       backgroundImage: {
         circle: "url(../images/bg-circle.svg)",
         dots: "url(../images/bg-dots.svg)",
+        "dots-r": "url(../images/bg-dots-reverse.svg)",
+        paws: "url(../images/bg-paws.svg)",
       },
     },
     maxWidth: {
