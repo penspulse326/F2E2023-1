@@ -1006,7 +1006,7 @@
         <button class="btn-close self-end">
           <img src="./src/images/btn-close.svg" alt="button-close" />
         </button>
-        <div class="flex-col gap-6">
+        <div class="flex flex-col gap-6">
           <ol
             class="flex flex-col gap-2 mr-6 text-slate list-decimal list-inside text-sm tracking-widest"
           >
@@ -1032,46 +1032,53 @@
               <li class="flex items-center">
                 <span class="shrink-0 mx-4 text-black">捐款金額</span
                 ><input
-                  class="w-full h-9 border-[1px] border-slate-light rounded-md"
+                  class="donate-input"
                   type="text"
                   name="dollar"
+                  placeholder="999"
                 />
               </li>
               <li class="flex items-center">
                 <span class="shrink-0 mx-4 text-black">真實姓名</span
                 ><input
-                  class="w-full h-9 border-[1px] border-slate-light rounded-md"
+                  class="donate-input"
                   type="text"
                   name="name"
+                  placeholder="輸入真實姓名 *"
                 />
               </li>
               <li class="flex items-center">
                 <span class="shrink-0 mx-4 text-black">電子郵件</span
                 ><input
-                  class="w-full h-9 border-[1px] border-slate-light rounded-md"
+                  class="donate-input"
                   type="text"
                   name="mail"
+                  placeholder="輸入電子郵件 *"
                 />
               </li>
               <li class="flex items-center">
                 <span class="shrink-0 mx-4 text-black">聯絡電話</span
                 ><input
-                  class="w-full h-9 border-[1px] border-slate-light rounded-md"
+                  class="donate-input"
                   type="text"
                   name="phone"
+                  placeholder="輸入聯絡電話 *"
                 />
               </li>
               <li class="flex items-center">
                 <span class="shrink-0 mx-4 text-black">寄送地址</span
                 ><input
-                  class="w-full h-9 border-[1px] border-slate-light rounded-md"
+                  class="donate-input"
                   type="text"
                   name="address"
+                  placeholder="輸入收據寄送地址 *"
                 />
               </li>
             </ul>
           </form>
-          <button class="btn-submit self-end" type="submit">確認捐款</button>
+          <button class="btn-form btn-submit self-end" href="#">
+            確認捐款
+          </button>
         </div>
       </div>
     </div>

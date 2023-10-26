@@ -11,6 +11,18 @@ $(document).ready(function () {
     );
   });
 
+  // scroll 到斗內
+  $(".btn-goDonate").on("click", (e) => {
+    e.preventDefault();
+
+    $("html, body").animate(
+      {
+        scrollTop: $(".section-donate").offset().top - 100,
+      },
+      1000
+    );
+  });
+
   // scroll 快速連結
   function scrollToSectionEvent(elementName, sectionName) {
     $(elementName).on("click", (e) => {
@@ -20,7 +32,7 @@ $(document).ready(function () {
         {
           scrollTop: $(sectionName).offset().top - 100,
         },
-        1000
+        10
       );
     });
   }
@@ -30,20 +42,36 @@ $(document).ready(function () {
   scrollToSectionEvent(".link-donate", ".section-donate");
 
   // donate 彈出視窗
-  $(".btn-donate").on("click", () => {
-    const body = $("body");
-    const main = $("main");
-    const popout = $(".popout");
-    const btnClose = $(".btn-close");
-    const btnNext = $(".btn-next");
-    const btnSubmit = $(".btn-submit");
+  const main = $("main");
+  const popout = $(".popout");
+  const btnClose = $(".btn-close");
+  const btnNext = $(".btn-next");
+  const btnSubmit = $(".btn-submit");
+  const popoutRule = $(".donate-rule");
+  const form = $(".donate-form");
 
-    body.css("overflow", "hidden");
+  $(".btn-donate").on("click", () => {
+    $("html, body").css("overflow", "hidden");
     main.css("filter", "blur(5px)");
     popout.removeClass("hidden").addClass("flex");
 
-    btnClose.on("click", () => {
-      popout.removeClass("flex").addClass("hidden");
+    btnNext.on("click", () => {
+      popoutRule.removeClass("flex").addClass("hidden");
+      form.removeClass("hidden").addClass("flex");
     });
+
+    closePopout(btnClose);
+    closePopout(btnSubmit);
   });
+
+  function closePopout(element) {
+    element.on("click", () => {
+      popout.removeClass("flex").addClass("hidden");
+      main.css("filter", "blur(0)");
+
+      $("html, body").css("overflow", "auto");
+      form.removeClass("flex").addClass("hidden");
+      popoutRule.removeClass("hidden").addClass("flex");
+    });
+  }
 });
