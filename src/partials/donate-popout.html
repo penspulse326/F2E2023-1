@@ -1,0 +1,128 @@
+<link rel="stylesheet" href="../../dist/output.css" />
+<div
+  class="popout fixed z-50 flex justify-center items-center w-full h-full bg-[rgba(50,50,50,0.25)]"
+>
+  <div
+    class="donate-rule flex flex-col gap-6 p-6 max-w-[610px] bg-white border-[1px] border-slate-light rounded-md"
+  >
+    <button class="btn-close self-end">
+      <img src="../images/btn-close.svg" alt="button-close" />
+    </button>
+    <ul class="flex flex-col gap-2 list-disc list-inside text-sm">
+      <h3 class="text-pink text-base font-bold tracking-wider">
+        對單一擬參選人捐贈額度規定
+      </h3>
+      <li class="text-slate">
+        個人捐贈：10 萬元 / 年
+        <p class="mt-2 text-black -indent-1">
+          對不同擬參選人：年度總和不得超過 30 萬元
+        </p>
+      </li>
+      <li class="text-slate">
+        營利事業：100 萬元 / 年
+        <p class="mt-2 text-black -indent-1">
+          對不同擬參選人：年度總和不得超過 200 萬元
+        </p>
+      </li>
+      <li class="text-slate">
+        人民團體：50 萬元 / 年
+        <p class="mt-2 text-black -indent-1">
+          對不同擬參選人：年度總和不得超過 100 萬元
+        </p>
+      </li>
+      <li class="text-slate">
+        任何人不得以本人以外名義捐贈或超過新台幣 1 萬元之匿名捐款。
+      </li>
+      <li class="text-slate">
+        超過新台幣 10 萬元以上現金捐贈，應以「支票或經由郵局、銀行匯款」為之。
+      </li>
+    </ul>
+    <ul class="flex flex-col gap-2 ml-14 list-disc list-inside text-sm">
+      <h3 class="text-pink text-base font-bold tracking-wider">
+        不得捐贈政治獻金之對象
+      </h3>
+      <li class="text-slate">
+        外國人民、大陸地區人民、香港及澳門居民、台灣未具有選舉權之人，同一種選舉擬參選人。
+      </li>
+      <li class="text-slate">公營事業或政府持有資本達 20% 之民營企業。</li>
+      <li class="text-slate">
+        與政府機關/機構有巨額採購或重大公共建設投資契約，或與政黨經營或投資之事業有巨額採購契約，且在履約期間之廠商或個人。
+      </li>
+      <li class="text-slate">有累積虧損尚未依規定彌補之營利事業。</li>
+      <li class="text-slate">政黨經營或投資之事業。</li>
+      <li class="text-slate">財團法人、宗教團體。</li>
+    </ul>
+    <button class="btn-form self-end" href="#">同意規定並前往捐款</button>
+  </div>
+  <div
+    class="donate-form flex flex-col gap-6 p-6 max-w-[450px] bg-white border-[1px] border-slate-light rounded-md"
+  >
+    <button class="btn-close self-end">
+      <img src="../images/btn-close.svg" alt="button-close" />
+    </button>
+    <div class="flex flex-col gap-6">
+      <ol
+        class="flex flex-col gap-2 mr-6 text-slate list-decimal list-inside text-sm tracking-widest"
+      >
+        <h3 class="mb-2 text-pink text-base font-bold tracking-wider">
+          不得捐贈政治獻金之對象
+        </h3>
+        <p class="mb-2 text-black text-sm">
+          請使用 ATM 虛擬帳號，照下列步驟付款
+        </p>
+        <li>收款帳號將顯示於完成頁及 Email 付款通知。</li>
+        <li>請於 24 小時內使用網路銀行或實體 ATM 將匯款金額轉入收款帳號。</li>
+        <li>匯款金額須與訂單金額相符，金額不正確將造成訂單取消。</li>
+        <li>
+          安全提醒：若第三方對您要求轉帳至私人帳號、在 ATM 解除分期付款、或掃描
+          QR Code 進入非應援科技網站等，請提高警覺，切勿遵照指示。
+        </li>
+      </ol>
+      <form action="#">
+        <ul class="flex flex-col gap-4 ml-6">
+          <li class="flex items-center">
+            <span class="shrink-0 mx-4 text-black">捐款金額</span
+            ><input
+              class="w-full h-9 border-[1px] border-slate-light rounded-md"
+              type="text"
+              name="dollar"
+            />
+          </li>
+          <li class="flex items-center">
+            <span class="shrink-0 mx-4 text-black">真實姓名</span
+            ><input
+              class="w-full h-9 border-[1px] border-slate-light rounded-md"
+              type="text"
+              name="name"
+            />
+          </li>
+          <li class="flex items-center">
+            <span class="shrink-0 mx-4 text-black">電子郵件</span
+            ><input
+              class="w-full h-9 border-[1px] border-slate-light rounded-md"
+              type="text"
+              name="mail"
+            />
+          </li>
+          <li class="flex items-center">
+            <span class="shrink-0 mx-4 text-black">聯絡電話</span
+            ><input
+              class="w-full h-9 border-[1px] border-slate-light rounded-md"
+              type="text"
+              name="phone"
+            />
+          </li>
+          <li class="flex items-center">
+            <span class="shrink-0 mx-4 text-black">寄送地址</span
+            ><input
+              class="w-full h-9 border-[1px] border-slate-light rounded-md"
+              type="text"
+              name="address"
+            />
+          </li>
+        </ul>
+      </form>
+      <button class="btn-form self-end" href="#">確認捐款</button>
+    </div>
+  </div>
+</div>

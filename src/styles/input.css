@@ -12,7 +12,7 @@
 
 @layer components {
   .grid-box {
-    @apply md:max-w-grid-md lg:max-w-grid-lg ;
+    @apply md:max-w-grid-md lg:max-w-grid-lg;
   }
 
   .logo {
@@ -29,15 +29,15 @@
   }
 
   .nav-sns-link {
-    @apply p-2 w-8 h-8 bg-white border-lightGray border-[1px] rounded-[50%] duration-300 hover:scale-150;
+    @apply p-2 w-8 h-8 bg-white border-gray-light border-[1px] rounded-[50%] duration-300 hover:scale-150;
   }
 
   .nav-donate:hover {
-    @apply bg-white text-lightPink;
+    @apply bg-white text-pink-mid;
   }
 
   .btn-goDonate {
-    @apply col-span-2 self-start flex justify-center items-center py-3 text-lightPink text-xl font-bold bg-white rounded-[6px];
+    @apply col-span-2 self-start flex justify-center items-center py-3 text-pink-mid text-xl font-bold bg-white rounded-[6px];
   }
 
   .btn-goDonate:hover img {
@@ -49,7 +49,11 @@
   }
 
   .btn-donate {
-    @apply block mb-4 px-7 py-3 bg-black text-white rounded-md hover:bg-gray-900 duration-300
+    @apply block mb-4 px-7 py-3 bg-black text-white rounded-md hover:bg-gray-900 duration-300;
+  }
+
+  .btn-form {
+    @apply block px-4 py-2 bg-black text-white rounded-md hover:bg-gray-900 duration-300;
   }
 
   .card-donate {
@@ -57,11 +61,11 @@
   }
 
   .form-input {
-    @apply px-4 py-3 w-full border-lightGray border-[1px] rounded-md;
+    @apply px-4 py-3 w-full border-gray-light border-[1px] rounded-md;
   }
 
   .footer-link {
-    @apply p-[10px] w-10 h-10 bg-white border-lightGray border-[1px] rounded-[50%] duration-300 hover:scale-110;
+    @apply p-[10px] w-10 h-10 bg-white border-gray-light border-[1px] rounded-[50%] duration-300 hover:scale-110;
   }
 }
 
@@ -75,7 +79,7 @@
   background-attachment: fixed;
 }
 
-.policy {
+.section-policy {
   background-attachment: fixed;
 }
 
