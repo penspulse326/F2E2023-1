@@ -36,6 +36,10 @@
     @apply bg-white text-pink-mid;
   }
 
+  .news-mainItem {
+    @apply border-[#000000] border-2 rounded-[50px];
+  }
+
   .btn-goDonate {
     @apply col-span-2 self-start flex justify-center items-center py-3 text-pink-mid text-xl font-bold bg-white rounded-[6px];
   }
@@ -101,6 +105,10 @@
 
 .news-slider:hover {
   animation-play-state: paused;
+}
+
+.carousel-item {
+  transition: 1s;
 }
 
 @keyframes jumping {

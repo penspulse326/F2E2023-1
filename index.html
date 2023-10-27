@@ -4,9 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>喵立翰 - 您的喵星守護者</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./dist/output.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script type="module" src="./src/scripts/main.js" defer></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./src/scripts/jquery-3.7.1.min.js"></script>
+    <script src="./src/scripts/main.js" defer></script>
   </head>
   <body>
     <main>
@@ -250,7 +252,11 @@
           <div class="grid grid-cols-12 gap-x-[30px] mt-10">
             <div class="col-span-6 grid grid-cols-6 gap-x-[30px] items-center">
               <div class="col-span-2 flex flex-col items-center gap-y-1">
-                <img src="./src/images/policy-1.svg" alt="policy-1" />
+                <img
+                  class="policy-number"
+                  src="./src/images/policy-1.svg"
+                  alt="policy-1"
+                />
                 <div
                   class="flex flex-col gap-6 mt-4 writing-v leading-none tracking-widest"
                 >
@@ -263,7 +269,7 @@
                   <p class="text-black">確保每一隻貓咪都能得到應有的照顧</p>
                 </div>
               </div>
-              <div class="col-span-4">
+              <div class="policy-content col-span-4">
                 <h3 class="mb-8 text-black text-2xl font-bold">
                   為毛孩子謀福利！推動寵物醫療保障方案
                 </h3>
@@ -282,39 +288,33 @@
               </div>
             </div>
             <div class="col-span-6 overflow-hidden">
-              <div class="news-carousel flex">
+              <div class="news-carousel flex items-start">
                 <div class="shrink-0 flex flex-col items-center">
                   <div
-                    class="carousel-mainItem border-[#000000] border-2 rounded-[50px] overflow-hidden"
+                    class="carousel-item carousel-item-1 news-mainItem overflow-hidden"
                   >
-                    <img
-                      class="rounded-[50px]"
-                      src="./src/images/policy-1.jpg"
-                      alt="policy-1-image"
-                    />
+                    <img src="./src/images/policy-1.jpg" alt="policy-1-image" />
                   </div>
-                  <div
-                    class="carousel-btn col-span-4 flex items-center gap-x-4 mt-6"
-                  >
-                    <button>
+                  <div class="z-10 col-span-4 flex items-center gap-x-4 mt-6">
+                    <button class="carousel-prev">
                       <img
                         class="rotate-180"
                         src="./src/images/icon-arrow-black.svg"
                         alt="carousel left-slide"
                       />
                     </button>
-                    <ul class="flex gap-x-2">
+                    <ul class="carousel-pagination flex gap-x-2">
                       <li
-                        class="w-2 h-2 bg-black border-black border-[1px] rounded-lg"
+                        class="carousel-pagination-1 w-2 h-2 bg-black border-black border-[1px] rounded-lg"
                       ></li>
                       <li
-                        class="w-2 h-2 border-black border-[1px] rounded-lg"
+                        class="carousel-pagination-2 w-2 h-2 border-black border-[1px] rounded-lg"
                       ></li>
                       <li
-                        class="w-2 h-2 border-black border-[1px] rounded-lg"
+                        class="carousel-pagination-3 w-2 h-2 border-black border-[1px] rounded-lg"
                       ></li>
                     </ul>
-                    <button>
+                    <button class="carousel-next">
                       <img
                         src="./src/images/icon-arrow-black.svg"
                         alt="carousel left-slide"
@@ -323,22 +323,14 @@
                   </div>
                 </div>
                 <div
-                  class="carousel-item shrink-0 scale-[0.925] overflow-hidden"
+                  class="carousel-item carousel-item-2 shrink-0 scale-[0.925] rounded-[50px] overflow-hidden"
                 >
-                  <img
-                    class="rounded-[50px]"
-                    src="./src/images/policy-2.jpg"
-                    alt="policy-2-image"
-                  />
+                  <img src="./src/images/policy-2.jpg" alt="policy-2-image" />
                 </div>
                 <div
-                  class="carousel-item shrink-0 scale-[0.925] rounded-[50px] overflow-hidden"
+                  class="carousel-item carousel-item-3 shrink-0 scale-[0.925] rounded-[50px] overflow-hidden"
                 >
-                  <img
-                    class="rounded-[50px]"
-                    src="./src/images/policy-3.jpg"
-                    alt="policy-3-image"
-                  />
+                  <img src="./src/images/policy-3.jpg" alt="policy-3-image" />
                 </div>
               </div>
             </div>
@@ -521,7 +513,12 @@
               謝謝您的捐款，我們期待集合眾人的力量來改造台灣
             </p>
             <ul class="flex gap-8 mt-10 px-6">
-              <li class="card-donate">
+              <li
+                class="card-donate"
+                data-aos="flip-left"
+                data-aos-anchor-placement="top-center"
+                data-aos-duration="1000"
+              >
                 <img
                   class="mb-2"
                   src="./src/images/donate-1.png"
@@ -529,10 +526,18 @@
                 />
                 <h4 class="mb-2 text-black text-xl font-bold">喵星人之友</h4>
                 <span class="mb-4 text-[#A66641] font-semibold">NT 600</span>
-                <button class="btn-donate" href="#">成為喵星人之友</button>
+                <button class="btn-donate" href="#" dollar="600">
+                  成為喵星人之友
+                </button>
                 <span class="text-black text-sm">已有 9,957 喵喵夥伴贊助</span>
               </li>
-              <li class="card-donate">
+              <li
+                class="card-donate"
+                data-aos="flip-left"
+                data-aos-anchor-placement="top-center"
+                data-aos-delay="100"
+                data-aos-duration="1000"
+              >
                 <img
                   class="mb-2"
                   src="./src/images/donate-2.png"
@@ -540,10 +545,18 @@
                 />
                 <h4 class="mb-2 text-black text-xl font-bold">喵星大使</h4>
                 <span class="mb-4 text-[#A66641] font-semibold">NT 6000</span>
-                <button class="btn-donate" href="#">成為喵星大使</button>
+                <button class="btn-donate" href="#" dollar="6000">
+                  成為喵星大使
+                </button>
                 <span class="text-black text-sm">已有 2,000 喵喵夥伴贊助</span>
               </li>
-              <li class="card-donate">
+              <li
+                class="card-donate"
+                data-aos="flip-left"
+                data-aos-anchor-placement="top-center"
+                data-aos-delay="200"
+                data-aos-duration="1000"
+              >
                 <img
                   class="mb-2"
                   src="./src/images/donate-3.png"
@@ -551,10 +564,18 @@
                 />
                 <h4 class="mb-2 text-black text-xl font-bold">喵星傳奇</h4>
                 <span class="mb-4 text-[#A66641] font-semibold">NT 60000</span>
-                <button class="btn-donate" href="#">成為喵星傳奇</button>
+                <button class="btn-donate" href="#" dollar="60000">
+                  成為喵星傳奇
+                </button>
                 <span class="text-black text-sm">已有 999 喵喵夥伴贊助</span>
               </li>
-              <li class="card-donate">
+              <li
+                class="card-donate"
+                data-aos="flip-left"
+                data-aos-anchor-placement="top-center"
+                data-aos-delay="300"
+                data-aos-duration="1000"
+              >
                 <img
                   class="mb-2"
                   src="./src/images/donate-4.png"
@@ -564,7 +585,9 @@
                 <span class="mb-4 text-[#A66641] font-semibold"
                   >自訂金額，心意無價</span
                 >
-                <button class="btn-donate" href="#">成為喵喵愛人</button>
+                <button class="btn-donate" href="#" dollar="">
+                  成為喵喵愛人
+                </button>
                 <span class="text-black text-sm">已有 999 喵喵夥伴贊助</span>
               </li>
             </ul>
@@ -941,7 +964,6 @@
         <span class="">© 2023 喵立翰</span>
       </footer>
     </main>
-
     <div
       class="popout hidden fixed top-0 z-50 justify-center items-center w-full h-full bg-[rgba(50,50,50,0.25)]"
     >
