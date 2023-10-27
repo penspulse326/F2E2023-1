@@ -636,6 +636,13 @@ video {
   color: rgb(242 145 136 / var(--tw-text-opacity));
 }
 
+.news-mainItem{
+  border-radius: 50px;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .btn-goDonate{
   grid-column: span 2 / span 2;
   display: flex;
@@ -1146,6 +1153,10 @@ video {
   align-content: center;
 }
 
+.items-start{
+  align-items: flex-start;
+}
+
 .items-center{
   align-items: center;
 }
@@ -1629,6 +1640,10 @@ video {
 
 .news-slider:hover {
   animation-play-state: paused;
+}
+
+.carousel-item {
+  transition: 1s;
 }
 
 @keyframes jumping {
