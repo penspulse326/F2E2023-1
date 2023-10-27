@@ -1,12 +1,12 @@
 <link rel="stylesheet" href="../../dist/output.css" />
 <div
-  class="popout fixed z-50 flex justify-center items-center w-full h-full bg-[rgba(50,50,50,0.25)]"
+  class="popout hidden fixed top-0 z-50 justify-center items-center w-full h-full bg-[rgba(50,50,50,0.25)]"
 >
   <div
     class="donate-rule flex flex-col gap-6 p-6 max-w-[610px] bg-white border-[1px] border-slate-light rounded-md"
   >
     <button class="btn-close self-end">
-      <img src="../images/btn-close.svg" alt="button-close" />
+      <img src="./src/images/btn-close.svg" alt="button-close" />
     </button>
     <ul class="flex flex-col gap-2 list-disc list-inside text-sm">
       <h3 class="text-pink text-base font-bold tracking-wider">
@@ -37,7 +37,7 @@
         超過新台幣 10 萬元以上現金捐贈，應以「支票或經由郵局、銀行匯款」為之。
       </li>
     </ul>
-    <ul class="flex flex-col gap-2 ml-14 list-disc list-inside text-sm">
+    <ul class="flex flex-col gap-2 list-disc list-inside text-sm">
       <h3 class="text-pink text-base font-bold tracking-wider">
         不得捐贈政治獻金之對象
       </h3>
@@ -52,13 +52,15 @@
       <li class="text-slate">政黨經營或投資之事業。</li>
       <li class="text-slate">財團法人、宗教團體。</li>
     </ul>
-    <button class="btn-form self-end" href="#">同意規定並前往捐款</button>
+    <button class="btn-next btn-form self-end" href="#">
+      同意規定並前往捐款
+    </button>
   </div>
   <div
-    class="donate-form flex flex-col gap-6 p-6 max-w-[450px] bg-white border-[1px] border-slate-light rounded-md"
+    class="donate-form hidden flex-col gap-6 p-6 max-w-[450px] bg-white border-[1px] border-slate-light rounded-md"
   >
     <button class="btn-close self-end">
-      <img src="../images/btn-close.svg" alt="button-close" />
+      <img src="./src/images/btn-close.svg" alt="button-close" />
     </button>
     <div class="flex flex-col gap-6">
       <ol
@@ -83,46 +85,51 @@
           <li class="flex items-center">
             <span class="shrink-0 mx-4 text-black">捐款金額</span
             ><input
-              class="w-full h-9 border-[1px] border-slate-light rounded-md"
+              class="donate-input"
               type="text"
               name="dollar"
+              placeholder="999"
             />
           </li>
           <li class="flex items-center">
             <span class="shrink-0 mx-4 text-black">真實姓名</span
             ><input
-              class="w-full h-9 border-[1px] border-slate-light rounded-md"
+              class="donate-input"
               type="text"
               name="name"
+              placeholder="輸入真實姓名 *"
             />
           </li>
           <li class="flex items-center">
             <span class="shrink-0 mx-4 text-black">電子郵件</span
             ><input
-              class="w-full h-9 border-[1px] border-slate-light rounded-md"
+              class="donate-input"
               type="text"
               name="mail"
+              placeholder="輸入電子郵件 *"
             />
           </li>
           <li class="flex items-center">
             <span class="shrink-0 mx-4 text-black">聯絡電話</span
             ><input
-              class="w-full h-9 border-[1px] border-slate-light rounded-md"
+              class="donate-input"
               type="text"
               name="phone"
+              placeholder="輸入聯絡電話 *"
             />
           </li>
           <li class="flex items-center">
             <span class="shrink-0 mx-4 text-black">寄送地址</span
             ><input
-              class="w-full h-9 border-[1px] border-slate-light rounded-md"
+              class="donate-input"
               type="text"
               name="address"
+              placeholder="輸入收據寄送地址 *"
             />
           </li>
         </ul>
       </form>
-      <button class="btn-form self-end" href="#">確認捐款</button>
+      <button class="btn-form btn-submit self-end" href="#">確認捐款</button>
     </div>
   </div>
 </div>
