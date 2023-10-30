@@ -15,13 +15,8 @@
     @apply md:max-w-grid-md lg:max-w-grid-lg;
   }
 
-  .logo {
-    @apply flex items-center;
-  }
-
-  .logo:hover img {
-    transform: rotate(15deg) scale(1.5);
-    transition: 0.3s;
+  .box-p {
+    @apply px-3 md:px-9 2xl:px-[88.5px];
   }
 
   .nav-paw {
@@ -29,11 +24,20 @@
   }
 
   .nav-sns-link {
-    @apply p-2 w-8 h-8 bg-white border-gray-light border-[1px] rounded-[50%] duration-300 hover:scale-150;
+    @apply hidden 2xl:block p-2 w-8 h-8 bg-white border-gray-light border-[1px] rounded-[50%] duration-300 hover:scale-150;
   }
 
   .nav-donate:hover {
     @apply bg-white text-pink-mid;
+  }
+
+  .burger-button:checked ~ img {
+    @apply rotate-90 duration-300;
+  }
+
+  .burger-button:checked ~ .burger-list {
+    @apply block;
+    animation: menu 0.3s;
   }
 
   .news-mainItem {
@@ -41,7 +45,7 @@
   }
 
   .btn-goDonate {
-    @apply col-span-2 self-start flex justify-center items-center py-3 text-pink-mid text-xl font-bold bg-white rounded-[6px];
+    @apply col-span-2 self-start flex justify-center items-center py-2 md:py-3 bg-white border-[1px] 2xl:border-0  border-black rounded-[6px] text-pink-mid text-xs 2xl:text-xl font-bold tracking-widest;
   }
 
   .btn-goDonate:hover img {
@@ -73,13 +77,28 @@
   }
 
   .footer-link {
-    @apply p-[10px] w-10 h-10 bg-white border-gray-light border-[1px] rounded-[50%] duration-300 hover:scale-110;
+    @apply p-2 md:p-[10px] w-8 h-8 md:w-10 md:h-10 bg-white border-gray-light border-[1px] rounded-[50%] duration-300 hover:scale-110;
   }
 }
 
 @layer utilities {
   .writing-v {
     writing-mode: vertical-lr;
+  }
+}
+
+.logo:hover img {
+  transform: rotate(15deg) scale(1.5);
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .btn-goDonate img {
+    content: url("../src/images/icon-arrow-sm.svg");
+  }
+
+  .header-image {
+    content: url("../src/images/header-image-sm.svg");
   }
 }
 
@@ -109,6 +128,18 @@
 
 .carousel-item {
   transition: 1s;
+}
+
+@keyframes menu {
+  0% {
+    transform-origin: top;
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform-origin: top;
+    transform: scaleY(1);
+  }
 }
 
 @keyframes jumping {

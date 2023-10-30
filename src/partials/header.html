@@ -1,39 +1,54 @@
 <link rel="stylesheet" href="../../dist/output.css" />
-<header class="mt-4 pb-4 bg-dots bg-no-repeat bg-center bg-contain">
-  <div class="container mx-auto 2xl:px-28">
-    <div class="relative mx-auto">
+<header
+  class="2xl:mt-4 2xl:pb-4 bg-dots-r-sm md:bg-dots bg-no-repeat bg-center bg-contain"
+>
+  <div class="container relative mx-auto 2xl:px-[88.5px]">
+    <div
+      class="relative grid grid-cols-4 2xl:grid-cols-12 gap-x-6 2xl:gap-x-[30px] px-3 pt-6 2xl:p-0 bg-pink-light 2xl:rounded-3xl"
+    >
       <div
-        class="relative grid grid-cols-12 gap-x-[30px] bg-pink-light rounded-3xl"
+        class="relative z-10 col-span-4 2xl:col-span-10 2xl:col-start-2 grid grid-cols-4 2xl:grid-cols-10 gap-x-6 2xl:gap-x-[30px] 2xl:my-8 2xl:bg-pink rounded-xl"
       >
         <div
-          class="relative z-10 col-span-10 col-start-2 grid grid-cols-10 gap-x-[30px] my-8 bg-pink rounded-xl"
+          class="relative 2xl:-bottom-8 col-span-2 2xl:col-span-4 col-start-2 2xl:col-start-1 -mx-6 2xl:mx-0 2xl:mt-12 2xl:px-2 order-10 md:order-[0]"
         >
-          <div class="relative -bottom-8 col-span-4 mt-12 px-2">
-            <img src="./src/images/header-image.png" alt="Li-Han's image" />
-          </div>
-          <div
-            class="col-span-6 grid grid-cols-6 lg:gap-x-[30px] content-center"
+          <img
+            class="header-image mt-1 md:mt-0"
+            src="../images/header-image.png"
+            alt="Li-Han's image"
+          />
+        </div>
+        <div
+          class="col-span-4 2xl:col-span-6 grid grid-cols-4 2xl:grid-cols-6 gap-x-6 2xl:gap-x-[30px] content-center"
+        >
+          <h2
+            class="col-span-2 2xl:col-span-4 self-center mb-2 2xl:mb-6 text-pink-mid md:text-white lg:text-5xl font-bold whitespace-nowrap"
           >
-            <h2
-              class="col-span-4 self-center lg:mb-6 text-white lg:text-5xl font-bold whitespace-nowrap"
-            >
-              為喵星人，護台灣！
-            </h2>
-            <p class="col-span-5 text-black lg:mb-6 tracking-wider">
-              我堅信，民眾的身心健康與工作熱情是推動經濟的核心動力，藉由推動更完善的貓咪福利和相關政策，同時也為台灣的經濟發展助一臂之力。讓我們一同護航台灣的幸福經濟，從照顧每一隻貓咪開始。
-            </p>
-            <button class="btn-goDonate">
-              <span>支持喵立翰</span>
-              <img
-                class="ml-[10px] w-auto duration-300"
-                src="./src/images/icon-arrow.svg"
-                alt="right-arrow"
-              />
-            </button>
-          </div>
-          <div class="absolute bottom-4 right-4 col-span-3 col-start-8">
-            <img src="./src/images/header-cat.svg" alt="header-cat" />
-          </div>
+            為喵星人，護台灣！
+          </h2>
+          <p
+            class="hidden 2xl:block col-span-5 mb-6 text-black 2xl:tracking-wider leading-[1.6]"
+          >
+            我堅信，民眾的身心健康與工作熱情是推動經濟的核心動力，藉由推動更完善的貓咪福利和相關政策，同時也為台灣的經濟發展助一臂之力。讓我們一同護航台灣的幸福經濟，從照顧每一隻貓咪開始。
+          </p>
+          <p
+            class="2xl:hidden col-span-3 mb-2 text-black text-xs tracking-widest leading-[1.6]"
+          >
+            我堅信，推動更完善的貓咪福利政策，同時也為台灣的經濟發展助力。讓我們照顧每一隻貓咪，一同護航台灣的幸福。
+          </p>
+          <button class="btn-goDonate">
+            <span>支持喵立翰</span>
+            <img
+              class="ml-[10px] w-auto duration-300"
+              src="../images/icon-arrow.svg"
+              alt="right-arrow"
+            />
+          </button>
+        </div>
+        <div
+          class="absolute bottom-4 right-4 hidden 2xl:block col-span-3 col-start-8"
+        >
+          <img src="../images/header-cat.svg" alt="header-cat" />
         </div>
       </div>
     </div>

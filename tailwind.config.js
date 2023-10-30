@@ -30,12 +30,13 @@ module.exports = {
         circle: "url(../src/images/bg-circle.svg)",
         dots: "url(../src/images/bg-dots.svg)",
         "dots-r": "url(../src/images/bg-dots-reverse.svg)",
+        "dots-r-sm": "url(../src/images/bg-dots-reverse-sm.svg)",
         paws: "url(../src/images/bg-paws.svg)",
       },
     },
     maxWidth: {
       "grid-lg": "1360px",
-      "grid-md": "736px",
+      "grid-md": "696px",
     },
     fontFamily: {
       sans: ["Noto Sans TC", "sans-serif"],

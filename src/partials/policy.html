@@ -25,7 +25,11 @@
     <div class="grid grid-cols-12 gap-x-[30px] mt-10">
       <div class="col-span-6 grid grid-cols-6 gap-x-[30px] items-center">
         <div class="col-span-2 flex flex-col items-center gap-y-1">
-          <img src="./src/images/policy-1.svg" alt="policy-1" />
+          <img
+            class="policy-number"
+            src="./src/images/policy-1.svg"
+            alt="policy-1"
+          />
           <div
             class="flex flex-col gap-6 mt-4 writing-v leading-none tracking-widest"
           >
@@ -38,7 +42,7 @@
             <p class="text-black">確保每一隻貓咪都能得到應有的照顧</p>
           </div>
         </div>
-        <div class="col-span-4">
+        <div class="policy-content col-span-4">
           <h3 class="mb-8 text-black text-2xl font-bold">
             為毛孩子謀福利！推動寵物醫療保障方案
           </h3>
@@ -57,33 +61,33 @@
         </div>
       </div>
       <div class="col-span-6 overflow-hidden">
-        <div class="news-carousel flex">
+        <div class="news-carousel flex items-start">
           <div class="shrink-0 flex flex-col items-center">
             <div
-              class="carousel-mainItem border-[#000000] border-2 rounded-[50px] overflow-hidden"
+              class="carousel-item carousel-item-1 news-mainItem overflow-hidden"
             >
-              <img
-                class="rounded-[50px]"
-                src="./src/images/policy-1.jpg"
-                alt="policy-1-image"
-              />
+              <img src="./src/images/policy-1.jpg" alt="policy-1-image" />
             </div>
-            <div class="carousel-btn col-span-4 flex items-center gap-x-4 mt-6">
-              <button>
+            <div class="z-10 col-span-4 flex items-center gap-x-4 mt-6">
+              <button class="carousel-prev">
                 <img
                   class="rotate-180"
                   src="./src/images/icon-arrow-black.svg"
                   alt="carousel left-slide"
                 />
               </button>
-              <ul class="flex gap-x-2">
+              <ul class="carousel-pagination flex gap-x-2">
                 <li
-                  class="w-2 h-2 bg-black border-black border-[1px] rounded-lg"
+                  class="carousel-pagination-1 w-2 h-2 bg-black border-black border-[1px] rounded-lg"
                 ></li>
-                <li class="w-2 h-2 border-black border-[1px] rounded-lg"></li>
-                <li class="w-2 h-2 border-black border-[1px] rounded-lg"></li>
+                <li
+                  class="carousel-pagination-2 w-2 h-2 border-black border-[1px] rounded-lg"
+                ></li>
+                <li
+                  class="carousel-pagination-3 w-2 h-2 border-black border-[1px] rounded-lg"
+                ></li>
               </ul>
-              <button>
+              <button class="carousel-next">
                 <img
                   src="./src/images/icon-arrow-black.svg"
                   alt="carousel left-slide"
@@ -91,21 +95,15 @@
               </button>
             </div>
           </div>
-          <div class="carousel-item shrink-0 scale-[0.925] overflow-hidden">
-            <img
-              class="rounded-[50px]"
-              src="./src/images/policy-2.jpg"
-              alt="policy-2-image"
-            />
+          <div
+            class="carousel-item carousel-item-2 shrink-0 scale-[0.925] rounded-[50px] overflow-hidden"
+          >
+            <img src="./src/images/policy-2.jpg" alt="policy-2-image" />
           </div>
           <div
-            class="carousel-item shrink-0 scale-[0.925] rounded-[50px] overflow-hidden"
+            class="carousel-item carousel-item-3 shrink-0 scale-[0.925] rounded-[50px] overflow-hidden"
           >
-            <img
-              class="rounded-[50px]"
-              src="./src/images/policy-3.jpg"
-              alt="policy-3-image"
-            />
+            <img src="./src/images/policy-3.jpg" alt="policy-3-image" />
           </div>
         </div>
       </div>
