@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="../../dist/output.css" />
-<div class="relative top-10 z-10 container mx-auto">
+<div class="relative top-10 z-10 hidden 2xl:block container mx-auto">
   <div class="grid grid-cols-12 gap-x-[30px] grid-box mx-auto">
     <div class="col-span-4 flex items-center pt-4 pr-8">
       <ul class="absolute flex gap-1 -ml-16 pt-4">
@@ -11,7 +11,7 @@
         class="relative flex items-center w-full max-h-[96px] bg-pink rounded-3xl"
       >
         <div class="relative self-end ml-2 max-w-[160px]">
-          <img src="./src/images/title-image.png" alt="title-image" />
+          <img src="../images/title-image.png" alt="title-image" />
         </div>
         <h2 class="ml-7 text-white text-[32px] font-bold">喵服務信箱</h2>
       </div>
@@ -19,23 +19,43 @@
   </div>
 </div>
 <section
-  class="relative bg-brown-light bg-circle bg-no-repeat bg-cover bg-center rounded-t-[50px]"
+  class="relative bg-brown-light bg-dots-r-sm 2xl:bg-circle bg-no-repeat bg-cover bg-center 2xl:rounded-t-[50px]"
 >
-  <div class="container mx-auto">
-    <div class="grid grid-cols-12 mx-auto py-20 grid-box gap-x-[30px]">
-      <div class="col-span-4 col-start-2 flex flex-col justify-center px-4">
-        <h3 class="mb-3 text-black lg:text-2xl font-bold">
+  <div class="container mx-auto box-p">
+    <div
+      class="relative grid grid-cols-4 2xl:grid-cols-12 gap-x-6 2xl:gap-x-[30px] mx-auto pt-6 pb-10 2xl:py-20"
+    >
+      <h2 class="title-sm col-span-2">喵服務信箱</h2>
+      <div
+        class="col-span-2 2xl:col-span-4 col-start-2 2xl:col-start-2 flex flex-col justify-center 2xl:px-4 tracking-widest whitespace-nowrap"
+      >
+        <h3
+          class="mb-4 2xl:mb-3 text-black text-sm lg:text-2xl font-bold text-right 2xl:text-left"
+        >
           您的聲音，我們的行動！
         </h3>
-        <p class="text-black">
+        <p class="hidden 2xl:block text-black leading-[1.6]">
           親愛的鄉親，每一位市民的意見都是我們社區前進的原動力。無論大小事，我都誠摯希望聽到您的建議。分享您的想法，一同為我們的未來打造更美好！
         </p>
-        <ul class="flex flex-col gap-9 mt-14">
+        <p
+          class="mb-6 2xl:hidden text-black text-[10px] text-center leading-[1.6]"
+        >
+          喵立翰誠摯希望聽到您的建議<br />
+          市民的意見是我們前進的動力<br />
+          一同為我們的未來打造更美好<br />
+        </p>
+        <button
+          class="md:hidden col-span-2 col-start-2 py-4 bg-brown border-[1px] border-black rounded-md text-black text-xs"
+          type="button"
+        >
+          填寫服務信箱
+        </button>
+        <ul class="hidden 2xl:flex flex-col gap-9 mt-14">
           <li class="flex">
             <div
               class="mr-6 p-5 max-w-[70px] max-h-[70px] bg-black-light rounded-[5px]"
             >
-              <img src="./src/images/icon-house.svg" alt="icon-house" />
+              <img src="../images/icon-house.svg" alt="icon-house" />
             </div>
             <div>
               <h4 class="mb-[10px] text-black text-lg font-semibold">
@@ -48,7 +68,7 @@
             <div
               class="mr-6 p-5 max-w-[70px] max-h-[70px] bg-black-light rounded-[5px]"
             >
-              <img src="./src/images/icon-phone.svg" alt="icon-phone" />
+              <img src="../images/icon-phone.svg" alt="icon-phone" />
             </div>
             <div>
               <h4 class="mb-[10px] text-black text-lg font-semibold">
@@ -61,7 +81,7 @@
             <div
               class="mr-6 p-5 max-w-[70px] max-h-[70px] bg-black-light rounded-[5px]"
             >
-              <img src="./src/images/icon-mail.svg" alt="icon-mail" />
+              <img src="../images/icon-mail.svg" alt="icon-mail" />
             </div>
             <div>
               <h4 class="mb-[10px] text-black text-lg font-semibold">
@@ -72,7 +92,9 @@
           </li>
         </ul>
       </div>
-      <div class="col-span-6 px-16 py-10 bg-white shadow-md rounded-lg">
+      <div
+        class="hidden md:block col-span-6 px-16 py-10 bg-white shadow-md rounded-lg"
+      >
         <form action="#">
           <ul class="flex flex-wrap gap-6">
             <li class="flex-grow">

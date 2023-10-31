@@ -1,6 +1,8 @@
 $(document).ready(function () {
-  AOS.init();
   carousel();
+
+  $(".donate-tilt").tilt();
+  $(".slogan-tilt").tilt();
 
   // scroll 回到頂端按鈕
   $(".btn-goTop").on("click", (e) => {
@@ -106,9 +108,8 @@ function carousel() {
     policyContent.html(policyContentText[currentIndex]);
     policyContent.fadeIn(1000);
 
-    item
-      .css("transform", `translateX(-${100 * currentIndex}%) scale(0.925)`)
-      .removeClass("news-mainItem");
+    item.css("transform", `translateX(-${100 * currentIndex}%) scale(0.925)`);
+
     $(`.carousel-item-${currentIndex + 1}`)
       .addClass(mainStyle)
       .css("transform", `translateX(-${99 * currentIndex}%)`);

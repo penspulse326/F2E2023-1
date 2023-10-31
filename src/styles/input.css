@@ -35,6 +35,14 @@
     @apply rotate-90 duration-300;
   }
 
+  .title-sm {
+    @apply relative flex items-center mb-4 text-black font-bold whitespace-nowrap z-20;
+  }
+
+  .title-sm::before {
+    @apply absolute left-3 block w-16 content-['*'] text-transparent bg-pink text-[6px] -z-10;
+  }
+
   .burger-button:checked ~ .burger-list {
     @apply block;
     animation: menu 0.3s;
@@ -57,7 +65,7 @@
   }
 
   .btn-donate {
-    @apply block mb-4 px-7 py-3 bg-black text-white rounded-md hover:bg-gray-900 duration-300;
+    @apply block mb-2 2xl:mb-4 py-2 2xl:py-3 bg-black w-[100px] 2xl:w-36 text-white text-[11px] 2xl:text-base rounded-md hover:bg-gray-900 duration-300;
   }
 
   .btn-form {
@@ -65,7 +73,16 @@
   }
 
   .card-donate {
-    @apply flex flex-col justify-center items-center md:px-8 2xl:px-12 py-3 bg-brown rounded-3xl;
+    @apply flex flex-row  2xl:flex-col  2xl:justify-center items-center px-3 py-5 2xl:px-12 2xl:py-3 bg-brown border-[1px] 2xl:border-0 border-black rounded-3xl;
+    transform-style: preserve-3d;
+  }
+
+  .card-donate img {
+  }
+
+  .card-donate:hover img {
+    box-shadow: 0 1px 10px 0px gray;
+    transform: translateZ(10px);
   }
 
   .form-input {
@@ -92,16 +109,6 @@
   transition: 0.3s;
 }
 
-@media (max-width: 768px) {
-  .btn-goDonate img {
-    content: url("../src/images/icon-arrow-sm.svg");
-  }
-
-  .header-image {
-    content: url("../src/images/header-image-sm.svg");
-  }
-}
-
 .slogan {
   background-attachment: fixed;
 }
@@ -126,8 +133,28 @@
   animation-play-state: paused;
 }
 
+.section-donate {
+  background-attachment: fixed;
+}
+
 .carousel-item {
   transition: 1s;
+}
+
+@media (max-width: 768px) {
+  .btn-goDonate img {
+    content: url("../src/images/icon-arrow-sm.svg");
+  }
+
+  .header-image {
+    content: url("../src/images/header-image-sm.svg");
+  }
+}
+
+@media (max-width: 1536px) {
+  .slogan-image {
+    content: url("../src/images/slogan-image-sm.svg");
+  }
 }
 
 @keyframes menu {

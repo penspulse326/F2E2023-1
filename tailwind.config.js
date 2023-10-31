@@ -32,6 +32,7 @@ module.exports = {
         "dots-r": "url(../src/images/bg-dots-reverse.svg)",
         "dots-r-sm": "url(../src/images/bg-dots-reverse-sm.svg)",
         paws: "url(../src/images/bg-paws.svg)",
+        "paws-sm": "url(../src/images/bg-paws-sm.svg)",
       },
     },
     maxWidth: {
