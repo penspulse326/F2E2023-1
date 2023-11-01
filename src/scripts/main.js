@@ -80,7 +80,7 @@ function carousel() {
   const prev = $(".carousel-prev");
   const next = $(".carousel-next");
   const item = $(".carousel-item");
-  const mainStyle = "news-mainItem";
+  const mainStyle = ".policy-mainItem";
   const pages = $(".carousel-pagination li");
   const policyNumber = $(".policy-number");
   const policyContent = $(".policy-content");

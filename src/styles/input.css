@@ -36,7 +36,7 @@
   }
 
   .title-sm {
-    @apply relative flex items-center mb-4 text-black font-bold whitespace-nowrap z-20;
+    @apply 2xl:hidden relative col-span-2 flex items-center  mt-6 mb-4 text-black font-bold whitespace-nowrap z-20;
   }
 
   .title-sm::before {
@@ -48,8 +48,25 @@
     animation: menu 0.3s;
   }
 
-  .news-mainItem {
+  .news-date {
+    @apply 2xl:hidden absolute bottom-2 flex justify-center items-center py-1 px-3 bg-[rgba(0,0,0,0.5)] rounded-[10px] text-white text-[8px];
+    backdrop-filter: blur(4px);
+  }
+
+  .policy-mainItem {
     @apply border-[#000000] border-2 rounded-[50px];
+  }
+
+  .news-content {
+    @apply absolute flex-col justify-center items-center 2xl:p-0 w-full h-full bg-black-mid rounded-[50px] tracking-widest text-center;
+  }
+
+  .news-checkbox:checked ~ .news-date {
+    @apply hidden;
+  }
+
+  .news-checkbox:checked ~ .news-content {
+    @apply flex 2xl:hidden;
   }
 
   .btn-goDonate {
@@ -65,7 +82,7 @@
   }
 
   .btn-donate {
-    @apply block mb-2 2xl:mb-4 py-2 2xl:py-3 bg-black w-[100px] 2xl:w-36 text-white text-[11px] 2xl:text-base rounded-md hover:bg-gray-900 duration-300;
+    @apply block mb-2 2xl:mb-4 py-2 2xl:py-3 bg-black w-[100px] 2xl:w-36 text-white text-[11px] 2xl:text-base rounded-md hover:bg-gray-900 duration-300 tracking-widest;
   }
 
   .btn-form {
@@ -73,16 +90,12 @@
   }
 
   .card-donate {
-    @apply flex flex-row  2xl:flex-col  2xl:justify-center items-center px-3 py-5 2xl:px-12 2xl:py-3 bg-brown border-[1px] 2xl:border-0 border-black rounded-3xl;
+    @apply flex flex-row  2xl:flex-col justify-between 2xl:justify-center items-center px-3 py-5 2xl:px-12 2xl:py-3 w-[280px] h-[140px] md:w-[386px] md:h-[189px] 2xl:w-auto 2xl:h-auto bg-brown border-[1px] 2xl:border-0 border-black rounded-3xl;
     transform-style: preserve-3d;
   }
 
   .card-donate img {
-  }
-
-  .card-donate:hover img {
-    box-shadow: 0 1px 10px 0px gray;
-    transform: translateZ(10px);
+    @apply w-[100x] h-[100px] md:w-[160px] md:h-[160px] 2xl:w-[200px] 2xl:h-[200px];
   }
 
   .form-input {
@@ -137,17 +150,36 @@
   background-attachment: fixed;
 }
 
+.card-donate:hover img {
+  box-shadow: 0 1px 10px 0px gray;
+  transform: translateZ(0px);
+}
+
 .carousel-item {
   transition: 1s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .btn-goDonate img {
     content: url("../src/images/icon-arrow-sm.svg");
   }
 
   .header-image {
     content: url("../src/images/header-image-sm.svg");
+  }
+
+  .news-img-1 {
+    content: url("../src/images/news-1-sm.jpg");
+  }
+  .news-img-2 {
+    content: url("../src/images/news-2-sm.jpg");
+  }
+  .news-img-3 {
+    content: url("../src/images/news-3-sm.jpg");
+  }
+
+  .policy-number-1 {
+    content: url("../src/images/policy-1-sm.svg");
   }
 }
 

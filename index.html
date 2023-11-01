@@ -175,7 +175,7 @@
                 class="relative 2xl:-bottom-8 col-span-2 2xl:col-span-4 col-start-2 2xl:col-start-1 -mx-6 2xl:mx-0 2xl:mt-12 2xl:px-2 order-10 md:order-[0]"
               >
                 <img
-                  class="header-image mt-1 md:mt-0"
+                  class="header-image mt-1 mx-auto md:mt-0"
                   src="./src/images/header-image.png"
                   alt="Li-Han's image"
                 />
@@ -306,13 +306,15 @@
           </li>
         </ul>
       </section>
-
       <section
-        class="section-policy mt-10 pt-10 pb-8 bg-paws bg-no-repeat bg-center bg-contain"
+        class="section-policy 2xl:mt-10 2xl:pt-10 pb-10 2xl:pb-8 bg-paws bg-no-repeat bg-center bg-cover 2xl:bg-contain"
       >
-        <div class="relative container mx-auto 2xl:px-28">
-          <div class="grid grid-cols-12 gap-x-[30px] grid-box mx-auto">
-            <div class="col-span-4 flex items-center pt-4 pr-8">
+        <div class="relative container mx-auto box-p">
+          <div
+            class="grid grid-cols-4 2xl:grid-cols-12 gap-x-6 2xl:gap-x-[30px] mx-auto"
+          >
+            <h2 class="title-sm">喵立翰主張</h2>
+            <div class="hidden col-span-4 2xl:flex items-center pt-4 pr-8">
               <ul class="absolute flex gap-1 -ml-16 pt-4">
                 <li class="w-3 h-3 bg-brown rounded-xl"></li>
                 <li class="w-3 h-3 bg-gray-light rounded-xl"></li>
@@ -331,20 +333,24 @@
             </div>
           </div>
         </div>
-        <div class="container mx-auto 2xl:pl-28">
-          <div class="grid grid-cols-12 gap-x-[30px] mt-10">
-            <div class="col-span-6 grid grid-cols-6 gap-x-[30px] items-center">
+        <div class="container mx-auto box-p">
+          <div
+            class="grid grid-cols-4 2xl:grid-cols-12 gap-x-6 2xl:gap-x-[30px] 2xl:mt-10"
+          >
+            <div
+              class="col-span-2 2xl:col-span-6 grid grid-cols-2 2xl:grid-cols-6 gap-x-6 2xl:gap-x-[30px] items-center content-center"
+            >
               <div class="col-span-2 flex flex-col items-center gap-y-1">
                 <img
-                  class="policy-number"
+                  class="policy-number policy-number-1 mb-2 2xl:m-0"
                   src="./src/images/policy-1.svg"
                   alt="policy-1"
                 />
                 <div
-                  class="flex flex-col gap-6 mt-4 writing-v leading-none tracking-widest"
+                  class="hidden md:flex flex-col gap-6 mt-4 writing-v leading-none tracking-widest"
                 >
                   <h3
-                    class="pt-1 text-pink-mid text-[32px] font-bold tracking-[0.5em]"
+                    class="hidden 2xl:block pt-1 text-pink-mid text-[32px] font-bold tracking-[0.5em]"
                   >
                     我是喵立翰
                   </h3>
@@ -352,33 +358,67 @@
                   <p class="text-black">確保每一隻貓咪都能得到應有的照顧</p>
                 </div>
               </div>
-              <div class="policy-content col-span-4">
-                <h3 class="mb-8 text-black text-2xl font-bold">
+              <div
+                class="policy-content flex flex-col items-center 2xl:items-start col-span-2 2xl:col-span-4"
+              >
+                <h3 class="hidden 2xl:block mb-8 text-black text-2xl font-bold">
                   為毛孩子謀福利！推動寵物醫療保障方案
                 </h3>
-                <p class="flex items-center gap-x-2 text-gray">
-                  <img src="./src/images/logo-paw-sm.svg" alt="paw" />
-                  設立 <span class="text-pink-mid">100,000,000</span> 醫療基金
-                </p>
-                <p class="flex items-center gap-x-2 text-gray">
-                  <img src="./src/images/logo-paw-sm.svg" alt="paw" />
-                  提供 <span class="text-pink-mid">20,000</span> 醫療補助
-                </p>
-                <p class="flex items-center gap-x-2 text-gray">
-                  <img src="./src/images/logo-paw-sm.svg" alt="paw" />
-                  合作 <span class="text-pink-mid">200+</span> 動物醫院
-                </p>
+                <h3 class="2xl:hidden mb-4 text-black text-sm tracking-widest">
+                  為毛孩子謀福利！<br />
+                  推動寵物醫療保障方案
+                </h3>
+                <div class="-ml-3">
+                  <p
+                    class="flex items-center gap-1 2xl:gap-x-2 text-gray text-[10px] 2xl:text-base"
+                  >
+                    <img
+                      class="w-5 h-5 2xl:w-auto 2xl:h-auto"
+                      src="./src/images/logo-paw-sm.svg"
+                      alt="paw"
+                    />
+                    設立 <span class="text-pink-mid">100,000,000</span> 醫療基金
+                  </p>
+                  <p
+                    class="flex items-center gap-1 2xl:gap-x-2 text-gray text-[10px] 2xl:text-base"
+                  >
+                    <img
+                      class="w-5 h-5 2xl:w-auto 2xl:h-auto"
+                      src="./src/images/logo-paw-sm.svg"
+                      alt="paw"
+                    />
+                    提供 <span class="text-pink-mid">20,000</span> 醫療補助
+                  </p>
+                  <p
+                    class="flex items-center gap-1 2xl:gap-x-2 text-gray text-[10px] 2xl:text-base"
+                  >
+                    <img
+                      class="w-5 h-5 2xl:w-auto 2xl:h-auto"
+                      src="./src/images/logo-paw-sm.svg"
+                      alt="paw"
+                    />
+                    合作 <span class="text-pink-mid">200+</span> 動物醫院
+                  </p>
+                </div>
               </div>
             </div>
-            <div class="col-span-6 overflow-hidden">
-              <div class="news-carousel flex items-start">
-                <div class="shrink-0 flex flex-col items-center">
+            <div
+              class="col-span-2 2xl:col-span-6 flex justify-center 2xl:block 2xl:w-auto overflow-hidden"
+            >
+              <div class="news-carousel flex items-start w-[164px]">
+                <div class="2xl:shrink-0 flex flex-col items-center">
                   <div
-                    class="carousel-item carousel-item-1 news-mainItem overflow-hidden"
+                    class="carousel-item carousel-item-1 policy-mainItem overflow-hidden"
                   >
-                    <img src="./src/images/policy-1.jpg" alt="policy-1-image" />
+                    <img
+                      class="min-w-[160px] h-[140px] 2xl:w-[436px] 2xl:h-[436px] object-cover"
+                      src="./src/images/policy-1.jpg"
+                      alt="policy-1-image"
+                    />
                   </div>
-                  <div class="z-10 col-span-4 flex items-center gap-x-4 mt-6">
+                  <div
+                    class="z-10 2xl:col-span-4 flex items-center gap-x-4 mt-6"
+                  >
                     <button class="carousel-prev">
                       <img
                         class="rotate-180"
@@ -406,14 +446,22 @@
                   </div>
                 </div>
                 <div
-                  class="carousel-item carousel-item-2 shrink-0 scale-[0.925] rounded-[50px] overflow-hidden"
+                  class="carousel-item carousel-item-2 2xl:shrink-0 scale-[0.925] rounded-[50px] overflow-hidden"
                 >
-                  <img src="./src/images/policy-2.jpg" alt="policy-2-image" />
+                  <img
+                    class="min-w-[160px] h-[140px] 2xl:w-[436px] 2xl:h-[436px] object-cover"
+                    src="./src/images/policy-2.jpg"
+                    alt="policy-2-image"
+                  />
                 </div>
                 <div
-                  class="carousel-item carousel-item-3 shrink-0 scale-[0.925] rounded-[50px] overflow-hidden"
+                  class="carousel-item carousel-item-3 2xl:shrink-0 scale-[0.925] rounded-[50px] overflow-hidden"
                 >
-                  <img src="./src/images/policy-3.jpg" alt="policy-3-image" />
+                  <img
+                    class="min-w-[160px] h-[140px] 2xl:w-[436px] 2xl:h-[436px] object-cover"
+                    src="./src/images/policy-3.jpg"
+                    alt="policy-3-image"
+                  />
                 </div>
               </div>
             </div>
@@ -421,11 +469,27 @@
         </div>
       </section>
       <section
-        class="section-news relative mt-10 pt-10 pb-20 bg-brown-light bg-circle bg-no-repeat bg-cover bg-center rounded-t-[50px]"
+        class="section-news relative 2xl:mt-10 2xl:pt-10 pb-10 2xl:pb-20 bg-brown-light 2xl:bg-circle bg-no-repeat bg-cover bg-center 2xl:rounded-t-[50px] overflow-hidden"
       >
+        <img
+          class="2xl:hidden absolute -right-[60px] w-[35%]"
+          src="./src/images/square-dots.svg"
+          alt="bg-dots"
+        />
+        <img
+          class="2xl:hidden absolute -left-[56px] -bottom-[30px] w-[35%]"
+          src="./src/images/square-dots.svg"
+          alt="bg-dots"
+        />
         <div class="relative container mx-auto">
-          <div class="grid grid-cols-12 gap-x-[30px] grid-box mx-auto">
-            <div class="col-span-4 flex items-center pt-4 pr-8">
+          <div
+            class="grid grid-cols-4 2xl:grid-cols-12 gap-x-6 2xl:gap-x-[30px] mx-auto box-p"
+          >
+            <h2 class="2xl:hidden self-start title-sm col-span-2 pt-6">
+              活動快報
+            </h2>
+
+            <div class="hidden col-span-4 2xl:flex items-center pt-4 pr-8">
               <ul class="absolute flex gap-1 -ml-16 pt-4">
                 <li class="w-3 h-3 bg-brown rounded-xl"></li>
                 <li class="w-3 h-3 bg-gray-light rounded-xl"></li>
@@ -443,16 +507,33 @@
           </div>
         </div>
         <div class="overflow-hidden">
-          <ul class="news-slider flex gap-8 mt-10 w-[200vw]">
-            <li class="col-span-4 max-w-[436px]">
-              <div class="px-10">
+          <ul class="news-slider flex gap-x-6 2xl:gap-x-8 2xl:mt-10">
+            <li class="flex-shrink-0 2xl:max-w-[436px]">
+              <label class="relative flex flex-col items-center">
                 <img
-                  class="border-2 border-black rounded-[50px]"
+                  class="news-img-1 border-2 border-black rounded-[50px]"
                   src="./src/images/news-1.jpeg"
                   alt="news-pets-forum"
                 />
-              </div>
-              <div class="px-4 text-center tracking-widest">
+                <input class="news-checkbox hidden" type="checkbox" />
+                <div class="news-content hidden">
+                  <p class="mb-2 px-2 text-pink-mid text-[10px]">
+                    參與台北寵物論壇<br />
+                    爭取貓咪友善環境
+                  </p>
+                  <p class="px-4 text-white text-[10px]">
+                    走進台北寵物論壇，決定要全力宣傳「貓咪至上」的理念！
+                  </p>
+                </div>
+                <span class="news-date"
+                  ><img
+                    class="mr-1"
+                    src="./src/images/icon-calendar.svg"
+                    alt="icon-calendar"
+                  />2023.12.24</span
+                >
+              </label>
+              <div class="hidden 2xl:block px-4 text-center tracking-widest">
                 <p class="my-4 text-black text-xs font-medium">
                   2023 / 12 / 26
                 </p>
@@ -464,15 +545,32 @@
                 </p>
               </div>
             </li>
-            <li class="col-span-4 max-w-[436px]">
-              <div class="px-10">
+            <li class="flex-shrink-0 2xl:max-w-[436px]">
+              <label class="relative flex flex-col items-center">
                 <img
-                  class="border-2 border-black rounded-[50px]"
+                  class="news-img-2 border-2 border-black rounded-[50px]"
                   src="./src/images/news-2.jpeg"
-                  alt="news-street-sweeping"
+                  alt="news-street-visiting"
                 />
-              </div>
-              <div class="px-4 text-center tracking-widest">
+                <input class="news-checkbox hidden" type="checkbox" />
+                <div class="news-content hidden">
+                  <p class="mb-2 px-2 text-pink-mid text-[10px]">
+                    掃街模式開啟！<br />
+                    帶著貓耳，來和我一起走！
+                  </p>
+                  <p class="px-4 text-white text-[10px]">
+                    這次的活動更加堅定了我推進「貓咪友善環境」政策的決心。
+                  </p>
+                </div>
+                <span class="news-date"
+                  ><img
+                    class="mr-1"
+                    src="./src/images/icon-calendar.svg"
+                    alt="icon-calendar"
+                  />2023.12.24</span
+                >
+              </label>
+              <div class="hidden 2xl:block px-4 text-center tracking-widest">
                 <p class="my-4 text-black text-xs font-medium">
                   2023 / 12 / 24
                 </p>
@@ -480,19 +578,36 @@
                   掃街模式開啟！<br />帶著你的貓耳，來和我一起走！
                 </h3>
                 <p class="text-black font-medium">
-                  大家都帶著貓耳來找我握手，真的太可愛了！更加堅定了我推進「貓咪友善環境」政策的決心。
+                  大家都帶著貓耳來找我握手，真的太可愛了！這次的活動更加堅定了我推進「貓咪友善環境」政策的決心。
                 </p>
               </div>
             </li>
-            <li class="col-span-4 max-w-[436px]">
-              <div class="px-10">
+            <li class="flex-shrink-0 2xl:max-w-[436px]">
+              <label class="relative flex flex-col items-center">
                 <img
-                  class="border-2 border-black rounded-[50px]"
+                  class="news-img-3 border-2 border-black rounded-[50px]"
                   src="./src/images/news-3.jpeg"
-                  alt="news-cats-model-show"
+                  alt="news-pets-show"
                 />
-              </div>
-              <div class="px-4 text-center tracking-widest">
+                <input class="news-checkbox hidden" type="checkbox" />
+                <div class="news-content hidden">
+                  <p class="mb-2 px-2 text-pink-mid text-[10px]">
+                    收容所模特兒<br />
+                    大比拼！
+                  </p>
+                  <p class="px-4 text-white text-[10px]">
+                    為了讓更多人認識到這裡的毛孩子，我們舉辦了前所未有的「模特兒走秀」！
+                  </p>
+                </div>
+                <span class="news-date"
+                  ><img
+                    class="mr-1"
+                    src="./src/images/icon-calendar.svg"
+                    alt="icon-calendar"
+                  />2023.12.20</span
+                >
+              </label>
+              <div class="hidden 2xl:block px-4 text-center tracking-widest">
                 <p class="my-4 text-black text-xs font-medium">
                   2023 / 12 / 20
                 </p>
@@ -500,19 +615,36 @@
                   收容所模特兒<br />大比拼！
                 </h3>
                 <p class="text-black font-medium">
-                  今天的收容所不再是一片寂靜。為了讓更多人認識到這裡的毛孩子，我們舉辦了「模特兒走秀」！
+                  今天的收容所不再是一片寂靜。為了讓更多人認識到這裡的毛孩子，我們舉辦了前所未有的「模特兒走秀」！
                 </p>
               </div>
             </li>
-            <li class="col-span-4 max-w-[436px]">
-              <div class="px-10">
+            <li class="flex-shrink-0 2xl:max-w-[436px]">
+              <label class="relative flex flex-col items-center">
                 <img
-                  class="border-2 border-black rounded-[50px]"
+                  class="news-img-1 border-2 border-black rounded-[50px]"
                   src="./src/images/news-1.jpeg"
                   alt="news-pets-forum"
                 />
-              </div>
-              <div class="px-4 text-center tracking-widest">
+                <input class="news-checkbox hidden" type="checkbox" />
+                <div class="news-content hidden">
+                  <p class="mb-2 px-2 text-pink-mid text-[10px]">
+                    參與台北寵物論壇<br />
+                    爭取貓咪友善環境
+                  </p>
+                  <p class="px-4 text-white text-[10px]">
+                    走進台北寵物論壇，決定要全力宣傳「貓咪至上」的理念！
+                  </p>
+                </div>
+                <span class="news-date"
+                  ><img
+                    class="mr-1"
+                    src="./src/images/icon-calendar.svg"
+                    alt="icon-calendar"
+                  />2023.12.24</span
+                >
+              </label>
+              <div class="hidden 2xl:block px-4 text-center tracking-widest">
                 <p class="my-4 text-black text-xs font-medium">
                   2023 / 12 / 26
                 </p>
@@ -524,15 +656,32 @@
                 </p>
               </div>
             </li>
-            <li class="col-span-4 max-w-[436px]">
-              <div class="px-10">
+            <li class="flex-shrink-0 2xl:max-w-[436px]">
+              <label class="relative flex flex-col items-center">
                 <img
-                  class="border-2 border-black rounded-[50px]"
+                  class="news-img-2 border-2 border-black rounded-[50px]"
                   src="./src/images/news-2.jpeg"
-                  alt="news-street-sweeping"
+                  alt="news-street-visiting"
                 />
-              </div>
-              <div class="px-4 text-center tracking-widest">
+                <input class="news-checkbox hidden" type="checkbox" />
+                <div class="news-content hidden">
+                  <p class="mb-2 px-2 text-pink-mid text-[10px]">
+                    掃街模式開啟！<br />
+                    帶著貓耳，來和我一起走！
+                  </p>
+                  <p class="px-4 text-white text-[10px]">
+                    這次的活動更加堅定了我推進「貓咪友善環境」政策的決心。
+                  </p>
+                </div>
+                <span class="news-date"
+                  ><img
+                    class="mr-1"
+                    src="./src/images/icon-calendar.svg"
+                    alt="icon-calendar"
+                  />2023.12.24</span
+                >
+              </label>
+              <div class="hidden 2xl:block px-4 text-center tracking-widest">
                 <p class="my-4 text-black text-xs font-medium">
                   2023 / 12 / 24
                 </p>
@@ -540,19 +689,36 @@
                   掃街模式開啟！<br />帶著你的貓耳，來和我一起走！
                 </h3>
                 <p class="text-black font-medium">
-                  大家都帶著貓耳來找我握手，真的太可愛了！更加堅定了我推進「貓咪友善環境」政策的決心。
+                  大家都帶著貓耳來找我握手，真的太可愛了！這次的活動更加堅定了我推進「貓咪友善環境」政策的決心。
                 </p>
               </div>
             </li>
-            <li class="col-span-4 max-w-[436px]">
-              <div class="px-10">
+            <li class="flex-shrink-0 2xl:max-w-[436px]">
+              <label class="relative flex flex-col items-center">
                 <img
-                  class="border-2 border-black rounded-[50px]"
+                  class="news-img-3 border-2 border-black rounded-[50px]"
                   src="./src/images/news-3.jpeg"
-                  alt="news-cats-model-show"
+                  alt="news-pets-show"
                 />
-              </div>
-              <div class="px-4 text-center tracking-widest">
+                <input class="news-checkbox hidden" type="checkbox" />
+                <div class="news-content hidden">
+                  <p class="mb-2 px-2 text-pink-mid text-[10px]">
+                    收容所模特兒<br />
+                    大比拼！
+                  </p>
+                  <p class="px-4 text-white text-[10px]">
+                    為了讓更多人認識到這裡的毛孩子，我們舉辦了前所未有的「模特兒走秀」！
+                  </p>
+                </div>
+                <span class="news-date"
+                  ><img
+                    class="mr-1"
+                    src="./src/images/icon-calendar.svg"
+                    alt="icon-calendar"
+                  />2023.12.20</span
+                >
+              </label>
+              <div class="hidden 2xl:block px-4 text-center tracking-widest">
                 <p class="my-4 text-black text-xs font-medium">
                   2023 / 12 / 20
                 </p>
@@ -560,7 +726,7 @@
                   收容所模特兒<br />大比拼！
                 </h3>
                 <p class="text-black font-medium">
-                  今天的收容所不再是一片寂靜。為了讓更多人認識到這裡的毛孩子，我們舉辦了「模特兒走秀」！
+                  今天的收容所不再是一片寂靜。為了讓更多人認識到這裡的毛孩子，我們舉辦了前所未有的「模特兒走秀」！
                 </p>
               </div>
             </li>
@@ -568,10 +734,12 @@
         </div>
       </section>
       <section
-        class="section-donate pt-10 pb-20 bg-dots-r bg-no-repeat bg-center bg-contain"
+        class="section-donate pt-6 pb-10 2xl:pt-10 2xl:pb-6 bg-paws-sm 2xl:bg-[none] 2xl:bg-no-repeat bg-top 2xl:bg-center bg-contain"
       >
         <div class="container mx-auto">
-          <div class="grid grid-cols-12 gap-x-[30px] grid-box mx-auto">
+          <div
+            class="hidden 2xl:grid grid-cols-4 2xl:grid-cols-12 gap-x-6 2xl:gap-x-[30px] box-p mx-auto"
+          >
             <div class="col-span-4 flex items-center pt-4 pr-8">
               <ul class="absolute flex gap-1 -ml-16 pt-4">
                 <li class="w-3 h-3 bg-brown rounded-xl"></li>
@@ -588,67 +756,138 @@
               </div>
             </div>
           </div>
-          <div class="relative mt-10 mx-auto grid-box">
-            <h3 class="mb-2 text-black text-2xl font-bold text-center">
+          <div
+            class="relative flex flex-col items-center 2xl:mt-10 2xl:pb-10 box-p 2xl:bg-dots-r 2xl:bg-center bg-cover"
+          >
+            <h2 class="self-start title-sm col-span-2">線上捐款</h2>
+            <h3
+              class="hidden 2xl:block mb-2 text-black text-2xl font-bold text-center"
+            >
               您的小筆捐款，是每隻毛孩未來的大大動力！
             </h3>
-            <p class="text-center">
+            <p class="hidden 2xl:block text-black text-center">
               謝謝您的捐款，我們期待集合眾人的力量來改造台灣
             </p>
-            <ul class="flex gap-8 mt-10 px-6">
+            <p
+              class="2xl:hidden text-black text-sm text-center tracking-widest"
+            >
+              您的小筆捐款，是每隻毛孩未來的大大動力！
+            </p>
+            <p
+              class="2xl:hidden text-black text-sm text-center tracking-widest"
+            >
+              我們期待集合眾人的力量來改造台灣
+            </p>
+            <ul
+              class="flex flex-col 2xl:flex-row items-center gap-8 mt-4 2xl:mt-10 px-7 2xl:px-6"
+            >
               <li class="card-donate donate-tilt">
-                <img
-                  class="mb-2 rounded-[50%]"
-                  src="./src/images/donate-1.png"
-                  alt="donate-NTD600"
-                />
-                <h4 class="mb-2 text-black text-xl font-bold">喵星人之友</h4>
-                <span class="mb-4 text-[#A66641] font-semibold">NT 600</span>
-                <button class="btn-donate" href="#" dollar="600">
-                  成為喵星人之友
-                </button>
-                <span class="text-black text-sm">已有 9,957 喵喵夥伴贊助</span>
+                <div class="2xl:mb-2">
+                  <img
+                    class="rounded-[50%]"
+                    src="./src/images/donate-1.svg"
+                    alt="donate-NTD600"
+                  />
+                </div>
+                <div class="flex flex-col items-center">
+                  <h4
+                    class="mb-1 2xl:mb-2 text-black text-sm 2xl:text-xl 2xl:font-bold"
+                  >
+                    喵星人之友
+                  </h4>
+                  <span
+                    class="mb-2 2xl:mb-4 text-[#A66641] text-[11px] 2xl:text-base font-semibold"
+                    >NT 600</span
+                  >
+                  <button class="btn-donate" href="#" dollar="600">
+                    成為喵星人之友
+                  </button>
+                  <span
+                    class="text-black text-[10px] 2xl:text-sm tracking-wider whitespace-nowrap"
+                    >已有 9,957 喵喵夥伴贊助</span
+                  >
+                </div>
               </li>
               <li class="card-donate donate-tilt">
-                <img
-                  class="mb-2 rounded-[50%]"
-                  src="./src/images/donate-2.png"
-                  alt="donate-NTD6,000"
-                />
-                <h4 class="mb-2 text-black text-xl font-bold">喵星大使</h4>
-                <span class="mb-4 text-[#A66641] font-semibold">NT 6000</span>
-                <button class="btn-donate" href="#" dollar="6000">
-                  成為喵星大使
-                </button>
-                <span class="text-black text-sm">已有 2,000 喵喵夥伴贊助</span>
+                <div class="2xl:mb-2">
+                  <img
+                    class="rounded-[50%]"
+                    src="./src/images/donate-2.svg"
+                    alt="donate-NTD6000"
+                  />
+                </div>
+                <div class="flex flex-col items-center">
+                  <h4
+                    class="mb-1 2xl:mb-2 text-black text-sm 2xl:text-xl 2xl:font-bold"
+                  >
+                    喵星大使
+                  </h4>
+                  <span
+                    class="mb-2 2xl:mb-4 text-[#A66641] text-[11px] 2xl:text-base font-semibold"
+                    >NT 6000</span
+                  >
+                  <button class="btn-donate" href="#" dollar="600">
+                    成為喵星大使
+                  </button>
+                  <span
+                    class="text-black text-[10px] 2xl:text-sm tracking-wider whitespace-nowrap"
+                    >已有 2,000 喵喵夥伴贊助</span
+                  >
+                </div>
               </li>
               <li class="card-donate donate-tilt">
-                <img
-                  class="mb-2 rounded-[50%]"
-                  src="./src/images/donate-3.png"
-                  alt="donate-NTD6,0000"
-                />
-                <h4 class="mb-2 text-black text-xl font-bold">喵星傳奇</h4>
-                <span class="mb-4 text-[#A66641] font-semibold">NT 60000</span>
-                <button class="btn-donate" href="#" dollar="60000">
-                  成為喵星傳奇
-                </button>
-                <span class="text-black text-sm">已有 999 喵喵夥伴贊助</span>
+                <div class="2xl:mb-2">
+                  <img
+                    class="rounded-[50%]"
+                    src="./src/images/donate-3.svg"
+                    alt="donate-NTD6000"
+                  />
+                </div>
+                <div class="flex flex-col items-center">
+                  <h4
+                    class="mb-1 2xl:mb-2 text-black text-sm 2xl:text-xl 2xl:font-bold"
+                  >
+                    喵星傳奇
+                  </h4>
+                  <span
+                    class="mb-2 2xl:mb-4 text-[#A66641] text-[11px] 2xl:text-base font-semibold"
+                    >NT 60000</span
+                  >
+                  <button class="btn-donate" href="#" dollar="60000">
+                    成為喵星傳奇
+                  </button>
+                  <span
+                    class="text-black text-[10px] 2xl:text-sm tracking-wider whitespace-nowrap"
+                    >已有 999 喵喵夥伴贊助</span
+                  >
+                </div>
               </li>
               <li class="card-donate donate-tilt">
-                <img
-                  class="mb-2 rounded-[50%]"
-                  src="./src/images/donate-4.png"
-                  alt="donate-custom"
-                />
-                <h4 class="mb-2 text-black text-xl font-bold">喵星愛人</h4>
-                <span class="mb-4 text-[#A66641] font-semibold"
-                  >自訂金額，心意無價</span
-                >
-                <button class="btn-donate" href="#" dollar="">
-                  成為喵喵愛人
-                </button>
-                <span class="text-black text-sm">已有 999 喵喵夥伴贊助</span>
+                <div class="2xl:mb-2">
+                  <img
+                    class="rounded-[50%]"
+                    src="./src/images/donate-4.svg"
+                    alt="donate-NTD600"
+                  />
+                </div>
+                <div class="flex flex-col items-center">
+                  <h4
+                    class="mb-1 2xl:mb-2 text-black text-sm 2xl:text-xl 2xl:font-bold"
+                  >
+                    喵喵愛人
+                  </h4>
+                  <span
+                    class="mb-2 2xl:mb-4 text-[#A66641] text-[11px] 2xl:text-base font-semibold"
+                    >自訂金額，心意無價</span
+                  >
+                  <button class="btn-donate" href="#" dollar="600">
+                    成為喵喵愛人
+                  </button>
+                  <span
+                    class="text-black text-[10px] 2xl:text-sm tracking-wider whitespace-nowrap"
+                    >已有 999 喵喵夥伴贊助</span
+                  >
+                </div>
               </li>
             </ul>
           </div>
@@ -685,7 +924,7 @@
               class="col-span-2 2xl:col-span-4 col-start-2 2xl:col-start-2 flex flex-col justify-center 2xl:px-4 tracking-widest whitespace-nowrap"
             >
               <h3
-                class="mb-4 2xl:mb-3 text-black text-sm lg:text-2xl font-bold text-right 2xl:text-left"
+                class="mb-4 2xl:mb-3 text-black text-sm lg:text-2xl font-bold text-center 2xl:text-left"
               >
                 您的聲音，我們的行動！
               </h3>
