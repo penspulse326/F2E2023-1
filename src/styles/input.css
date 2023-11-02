@@ -11,24 +11,8 @@
 }
 
 @layer components {
-  .grid-box {
-    @apply md:max-w-grid-md lg:max-w-grid-lg;
-  }
-
   .box-p {
     @apply px-3 md:px-9 2xl:px-[88.5px];
-  }
-
-  .nav-paw {
-    @apply hidden lg:block lg:mr-4 w-5 h-5 duration-300;
-  }
-
-  .nav-sns-link {
-    @apply hidden 2xl:block p-2 w-8 h-8 bg-white border-gray-light border-[1px] rounded-[50%] duration-300 hover:scale-150;
-  }
-
-  .nav-donate:hover {
-    @apply bg-white text-pink-mid;
   }
 
   .burger-button:checked ~ img {
@@ -36,11 +20,11 @@
   }
 
   .title-sm {
-    @apply 2xl:hidden relative col-span-2 flex items-center  mt-6 mb-4 text-black font-bold whitespace-nowrap z-20;
+    @apply 2xl:hidden relative col-span-2 flex items-end text-black md:text-2xl font-bold;
   }
 
   .title-sm::before {
-    @apply absolute left-3 block w-16 content-['*'] text-transparent bg-pink text-[6px] -z-10;
+    @apply absolute left-3 block w-[68px] md:w-[120px] content-['*'] text-transparent text-[8px] md:text-sm -z-10;
   }
 
   .burger-button:checked ~ .burger-list {
@@ -106,6 +90,10 @@
     @apply py-2 px-3 w-full h-9 text-sm border-[1px] border-slate-light rounded-md  placeholder:text-slate focus:border-black focus:outline-none focus:ring-0;
   }
 
+  .slogan-paw {
+    @apply w-5 2xl:w-[44px] h-5 2xl:h-[44px] rotate-12 duration-300;
+  }
+
   .footer-link {
     @apply p-2 md:p-[10px] w-8 h-8 md:w-10 md:h-10 bg-white border-gray-light border-[1px] rounded-[50%] duration-300 hover:scale-110;
   }
@@ -115,15 +103,15 @@
   .writing-v {
     writing-mode: vertical-lr;
   }
+
+  .bg-fixed {
+    background-attachment: fixed;
+  }
 }
 
 .logo:hover img {
   transform: rotate(15deg) scale(1.5);
   transition: 0.3s;
-}
-
-.slogan {
-  background-attachment: fixed;
 }
 
 .section-policy {
@@ -159,6 +147,28 @@
   transition: 1s;
 }
 
+.paws li {
+  animation: jumping 2s ease-in-out infinite;
+}
+.paws li:nth-child(1) {
+  animation-delay: 0s;
+}
+.paws li:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.paws li:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.paws li:nth-child(4) {
+  animation-delay: 0.6s;
+}
+.paws li:nth-child(5) {
+  animation-delay: 0.8s;
+}
+.paws li:nth-child(6) {
+  animation-delay: 1s;
+}
+
 @media (max-width: 767px) {
   .btn-goDonate img {
     content: url("../src/images/icon-arrow-sm.svg");
@@ -183,12 +193,6 @@
   }
 }
 
-@media (max-width: 1536px) {
-  .slogan-image {
-    content: url("../src/images/slogan-image-sm.svg");
-  }
-}
-
 @keyframes menu {
   0% {
     transform-origin: top;
@@ -203,15 +207,15 @@
 
 @keyframes jumping {
   0% {
-    transform: scale(1);
+    transform: scale(1) rotate(12deg);
   }
 
   50% {
-    transform: scale(0.9);
+    transform: scale(1.5) rotate(-24deg);
   }
 
   100% {
-    transform: scale(1);
+    transform: scale(1) rotate(12deg);
   }
 }
 

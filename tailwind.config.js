@@ -36,10 +36,6 @@ module.exports = {
         "paws-sm": "url(../src/images/bg-paws-sm.svg)",
       },
     },
-    maxWidth: {
-      "grid-lg": "1360px",
-      "grid-md": "696px",
-    },
     fontFamily: {
       sans: ["Noto Sans TC", "sans-serif"],
     },
