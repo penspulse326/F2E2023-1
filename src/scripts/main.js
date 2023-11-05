@@ -1,8 +1,8 @@
 $(document).ready(function () {
   carousel();
 
-  $(".donate-tilt").tilt();
-  $(".slogan-tilt").tilt();
+  // $(".donate-tilt").tilt();
+  // $(".slogan-tilt").tilt();
 
   // scroll 回到頂端按鈕
   $(".btn-goTop").on("click", (e) => {

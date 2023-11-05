@@ -7,7 +7,7 @@ module.exports = {
         pink: {
           DEFAULT: "#F2B4AE",
           mid: "#F29188",
-          light: `rgba(242, 180, 174, 0.15)`,
+          light: `#FDF4F3`,
         },
         brown: {
           DEFAULT: "#F2DCC9",

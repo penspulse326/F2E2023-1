@@ -1,104 +1,116 @@
 <link rel="stylesheet" href="../../dist/output.css" />
-<div class="relative top-10 z-10 hidden 2xl:block container mx-auto">
-  <div class="grid grid-cols-12 gap-x-[30px] grid-box mx-auto">
-    <div class="col-span-4 flex items-center pt-4 pr-8">
-      <ul class="absolute flex gap-1 -ml-16 pt-4">
-        <li class="w-3 h-3 bg-brown rounded-xl"></li>
-        <li class="w-3 h-3 bg-gray-light rounded-xl"></li>
-        <li class="w-3 h-3 bg-gray-light rounded-xl"></li>
-      </ul>
-      <div
-        class="relative flex items-center w-full max-h-[96px] bg-pink rounded-3xl"
-      >
-        <div class="relative self-end ml-2 max-w-[160px]">
-          <img src="../images/title-image.png" alt="title-image" />
-        </div>
-        <h2 class="ml-7 text-white text-[32px] font-bold">喵服務信箱</h2>
-      </div>
-    </div>
-  </div>
-</div>
+<!-- mail -->
 <section
-  class="relative bg-brown-light bg-dots-r-sm 2xl:bg-circle bg-no-repeat bg-cover bg-center 2xl:rounded-t-[50px]"
+  class="relative xl:mt-[86px] bg-brown-light xl:bg-circle bg-no-repeat bg-cover bg-center xl:rounded-t-[50px] overflow-hidden"
 >
   <div class="container mx-auto box-p">
     <div
-      class="relative grid grid-cols-4 2xl:grid-cols-12 gap-x-6 2xl:gap-x-[30px] mx-auto pt-6 pb-10 2xl:py-20"
+      class="relative grid grid-cols-4 md:grid-cols-6 xl:grid-cols-12 gap-x-6 xl:gap-x-[30px] content-center mx-auto pt-6 pb-10 md:pb-12 xl:py-20"
     >
-      <h2 class="title-sm col-span-2">喵服務信箱</h2>
+      <!-- title -->
       <div
-        class="col-span-2 2xl:col-span-4 col-start-2 2xl:col-start-2 flex flex-col justify-center 2xl:px-4 tracking-widest whitespace-nowrap"
+        class="relative xl:absolute xl:-top-[72px] z-10 col-span-2 xl:col-span-4 flex items-center mb-4 xl:mr-8 xl:pt-4 max-w-[410px]"
+      >
+        <ul class="absolute hidden xl:flex gap-1 mt-4 -ml-16">
+          <li class="w-3 h-3 bg-brown rounded-xl"></li>
+          <li class="w-3 h-3 bg-gray-light rounded-xl"></li>
+          <li class="w-3 h-3 bg-gray-light rounded-xl"></li>
+        </ul>
+        <div class="flex items-center w-full xl:h-24 xl:bg-pink rounded-3xl">
+          <img
+            class="hidden xl:block self-end ml-2 w-40"
+            src="../images/title-image.png"
+            alt="title-image"
+          />
+          <h2 class="title before:bg-pink">喵服務信箱</h2>
+        </div>
+      </div>
+      <!-- content -->
+      <div
+        class="col-span-2 md:col-span-3 xl:col-span-4 col-start-2 md:col-start-1 xl:col-start-2 flex flex-col justify-center xl:px-4 text-center md:text-left tracking-widest"
       >
         <h3
-          class="mb-4 2xl:mb-3 text-black text-sm lg:text-2xl font-bold text-right 2xl:text-left"
+          class="mb-4 xl:mb-3 text-black text-sm md:text-base lg:text-2xl font-bold whitespace-nowrap"
         >
           您的聲音，我們的行動！
         </h3>
-        <p class="hidden 2xl:block text-black leading-[1.6]">
+        <p
+          class="hidden md:block text-black md:text-sm xl:text-base leading-[1.6]"
+        >
           親愛的鄉親，每一位市民的意見都是我們社區前進的原動力。無論大小事，我都誠摯希望聽到您的建議。分享您的想法，一同為我們的未來打造更美好！
         </p>
-        <p
-          class="mb-6 2xl:hidden text-black text-[10px] text-center leading-[1.6]"
-        >
+        <p class="mb-6 md:hidden text-black text-[10px] leading-[1.6]">
           喵立翰誠摯希望聽到您的建議<br />
           市民的意見是我們前進的動力<br />
           一同為我們的未來打造更美好<br />
         </p>
         <button
-          class="md:hidden col-span-2 col-start-2 py-4 bg-brown border-[1px] border-black rounded-md text-black text-xs"
+          class="md:hidden col-span-2 col-start-2 mx-auto py-4 w-40 bg-brown border-[1px] border-black rounded-md text-black text-xs"
           type="button"
         >
           填寫服務信箱
         </button>
-        <ul class="hidden 2xl:flex flex-col gap-9 mt-14">
-          <li class="flex">
+        <ul class="hidden md:flex flex-col gap-2 xl:gap-9 mt-10 xl:mt-14">
+          <li class="md:order-2 xl:order-[0] flex items-center">
             <div
-              class="mr-6 p-5 max-w-[70px] max-h-[70px] bg-black-light rounded-[5px]"
+              class="mr-3 xl:mr-6 p-[10px] xl:p-5 w-10 h-10 xl:w-[70px] xl:h-[70px] bg-black-light rounded-[5px]"
             >
               <img src="../images/icon-house.svg" alt="icon-house" />
             </div>
             <div>
-              <h4 class="mb-[10px] text-black text-lg font-semibold">
+              <h4
+                class="md:hidden xl:block mb-[10px] text-black text-lg font-semibold"
+              >
                 聯絡地址
               </h4>
-              <p class="text-[#637381]">高雄市新興區民生一路 56 號</p>
+              <p class="text-[#637381] text-xs xl:text-base">
+                高雄市新興區民生一路 56 號
+              </p>
             </div>
           </li>
-          <li class="flex">
+          <li class="flex items-center">
             <div
-              class="mr-6 p-5 max-w-[70px] max-h-[70px] bg-black-light rounded-[5px]"
+              class="mr-3 xl:mr-6 p-[10px] xl:p-5 w-10 h-10 xl:w-[70px] xl:h-[70px] bg-black-light rounded-[5px]"
             >
               <img src="../images/icon-phone.svg" alt="icon-phone" />
             </div>
             <div>
-              <h4 class="mb-[10px] text-black text-lg font-semibold">
+              <h4
+                class="md:hidden xl:block mb-[10px] text-black text-lg font-semibold"
+              >
                 聯絡電話
               </h4>
-              <p class="text-[#637381]">(02)1234-5678</p>
+              <p class="text-[#637381] text-xs xl:text-base">(02)1234-5678</p>
             </div>
           </li>
-          <li class="flex">
+          <li class="flex items-center">
             <div
-              class="mr-6 p-5 max-w-[70px] max-h-[70px] bg-black-light rounded-[5px]"
+              class="mr-3 xl:mr-6 p-[10px] xl:p-5 w-10 h-10 xl:w-[70px] xl:h-[70px] bg-black-light rounded-[5px]"
             >
               <img src="../images/icon-mail.svg" alt="icon-mail" />
             </div>
             <div>
-              <h4 class="mb-[10px] text-black text-lg font-semibold">
+              <h4
+                class="md:hidden xl:block mb-[10px] text-black text-lg font-semibold"
+              >
                 聯絡信箱
               </h4>
-              <p class="text-[#637381]">miaomia@contact.tw</p>
+              <p class="text-[#637381] text-xs xl:text-base">
+                miaomia@contact.tw
+              </p>
             </div>
           </li>
         </ul>
       </div>
       <div
-        class="hidden md:block col-span-6 px-16 py-10 bg-white shadow-md rounded-lg"
+        class="hidden z-10 md:block col-span-3 xl:col-span-6 px-7 xl:px-16 py-6 xl:py-10 bg-white shadow-md rounded-lg"
       >
-        <form action="#">
-          <ul class="flex flex-wrap gap-6">
+        <form class="m-0" action="#">
+          <ul class="flex flex-wrap gap-4 xl:gap-6">
             <li class="flex-grow">
-              <p class="mb-[10px]">您的姓名 <span class="text-pink">*</span></p>
+              <p class="text-sm xl:text-base">
+                您的姓名 <span class="text-pink">*</span>
+              </p>
               <input
                 class="form-input"
                 type="text"
@@ -107,7 +119,9 @@
               />
             </li>
             <li class="flex-grow">
-              <p class="mb-[10px]">您的電話 <span class="text-pink">*</span></p>
+              <p class="text-sm xl:text-base">
+                您的電話 <span class="text-pink">*</span>
+              </p>
               <input
                 class="form-input"
                 type="text"
@@ -116,7 +130,9 @@
               />
             </li>
             <li class="w-full">
-              <p class="mb-[10px]">您的信箱 <span class="text-pink">*</span></p>
+              <p class="text-sm xl:text-base">
+                您的信箱 <span class="text-pink">*</span>
+              </p>
               <input
                 class="form-input"
                 type="text"
@@ -125,10 +141,12 @@
               />
             </li>
             <li class="w-full">
-              <p class="mb-[10px]">您的訊息 <span class="text-pink">*</span></p>
+              <p class="text-sm xl:text-base">
+                您的訊息 <span class="text-pink">*</span>
+              </p>
 
               <textarea
-                class="form-input h-32"
+                class="form-input h-20 xl:h-32"
                 type="text"
                 name="message"
                 placeholder="請輸入您的訊息"
@@ -136,7 +154,7 @@
             </li>
           </ul>
           <button
-            class="block mt-7 mx-auto py-3 w-[75%] bg-brown rounded-md text-black"
+            class="block mt-4 xl:mt-7 mx-auto py-3 w-full xl:w-[75%] bg-brown rounded-md text-black"
             type="submit"
           >
             送出訊息
@@ -145,4 +163,14 @@
       </div>
     </div>
   </div>
+  <img
+    class="xl:hidden absolute -left-20 md:-left-6 bottom-0 w-[150px]"
+    src="../images/square-dots.svg"
+    alt="square-dots"
+  />
+  <img
+    class="xl:hidden absolute -right-20 md:-right-6 top-0 w-[150px]"
+    src="../images/square-dots.svg"
+    alt="square-dots"
+  />
 </section>
