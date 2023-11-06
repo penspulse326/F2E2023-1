@@ -30,11 +30,11 @@
     @apply relative col-span-2 flex items-end xl:ml-4 xl:mr-8 text-black xl:text-white md:text-xl xl:text-[28px] xl:text-[32px] font-bold;
   }
   .title::before {
-    @apply absolute bottom-[2px] left-3 block w-16 h-3 md:w-24 md:h-4 content-['*'] text-transparent md:text-sm -z-10;
+    @apply absolute bottom-[2px] left-3 block w-16 h-3 md:w-[84px] md:h-4 content-['*'] text-transparent md:text-sm -z-10;
   }
 
   .policy-mainItem {
-    @apply border-[#000000] border-2 rounded-[50px];
+    @apply border-[#000000] border-2;
   }
 
   /* section news */
@@ -89,10 +89,6 @@
   .btn-goDonate:hover img {
     @apply duration-300 rotate-90 scale-150;
   }
-
-  .btn-goTop:hover {
-    @apply duration-300 scale-150;
-  }
 }
 
 @layer utilities {
@@ -133,10 +129,6 @@
   box-shadow: 0 1px 10px 0px gray;
   transform: translateZ(0px);
 } */
-
-.carousel-item {
-  transition: 1s;
-}
 
 .paws li {
   animation: jumping 1.5s ease-in-out infinite;

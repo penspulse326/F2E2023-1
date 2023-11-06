@@ -16,7 +16,7 @@
       <div class="flex items-center w-full xl:h-24 xl:bg-pink rounded-3xl">
         <img
           class="hidden xl:block self-end ml-2 w-40"
-          src="../images/title-image.png"
+          src="./src/images/title-image.png"
           alt="title-image"
         />
         <h2 class="title before:bg-brown">喵立翰主張</h2>
@@ -27,13 +27,15 @@
       class="grid grid-cols-4 md:grid-cols-6 xl:grid-cols-12 gap-x-6 xl:gap-x-[30px] mt-4 xl:mt-10"
     >
       <div
-        class="col-span-2 md:col-span-3 xl:col-span-6 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 grid-rows-[auto,1fr] md:items-center gap-x-6 xl:gap-x-[30px]"
+        class="col-span-2 md:col-span-3 xl:col-span-6 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 grid-rows-[auto,1fr] md:items-center gap-x-6 xl:gap-x-[30px] leading-none md:leading-normal"
       >
-        <div class="col-span-2 md:col-span-1 xl:col-span-2 flex flex-col">
+        <div
+          class="col-span-2 md:col-span-1 xl:col-span-2 flex flex-col md:items-center"
+        >
           <p class="policy-number text-black md:text-2xl xl:text-[32px]">01</p>
           <img
             class="mt-2 w-28 md:w-full xl:w-[65%]"
-            src="../images/curve.svg"
+            src="./src/images/curve.svg"
             alt="curve"
           />
           <div
@@ -56,13 +58,11 @@
             </p>
           </div>
         </div>
-        <div
-          class="policy-content col-span-2 xl:col-span-4 flex flex-col tracking-widest xl:tracking-normal"
-        >
+        <div class="policy-content col-span-2 xl:col-span-4 flex flex-col">
           <h3 class="hidden xl:block text-black text-2xl font-bold">
             為毛孩子謀福利！推動寵物醫療保障方案
           </h3>
-          <h3 class="xl:hidden mt-2 md:m-0 text-black text-sm md:text-base">
+          <h3 class="xl:hidden mt-1 md:m-0 text-black text-sm md:text-base">
             為毛孩子謀福利！<br />
             推動寵物醫療保障方案
           </h3>
@@ -72,7 +72,7 @@
             <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
               <img
                 class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
-                src="../images/logo-paw.svg"
+                src="./src/images/logo-paw.svg"
                 alt="paw"
               />
               設立
@@ -82,7 +82,7 @@
             <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
               <img
                 class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
-                src="../images/logo-paw.svg"
+                src="./src/images/logo-paw.svg"
                 alt="paw"
               />
               提供 <span class="text-pink-mid">20,000</span> 醫療補助
@@ -90,11 +90,12 @@
             <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
               <img
                 class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
-                src="../images/logo-paw.svg"
+                src="./src/images/logo-paw.svg"
                 alt="paw"
               />
               合作
-              <span class="text-pink-mid tracking-wider">200+</span> 動物醫院
+              <span class="text-pink-mid tracking-wider">200+</span>
+              動物醫院
             </p>
           </div>
         </div>
@@ -104,11 +105,11 @@
         <div class="news-carousel flex items-start overflow-hidden">
           <div class="shrink-0 flex flex-col items-center w-full xl:w-2/3">
             <div
-              class="carousel-item carousel-item-1 policy-mainItem w-full overflow-hidden"
+              class="carousel-item carousel-item-1 policy-mainItem w-full rounded-[50px] overflow-hidden duration-1000"
             >
               <img
                 class="w-full object-cover"
-                src="../images/policy-1.jpg"
+                src="./src/images/policy-1.jpg"
                 alt="policy-1-image"
               />
             </div>
@@ -119,7 +120,7 @@
               <button class="carousel-prev">
                 <img
                   class="w-5 xl:w-auto h-5 xl:h-auto rotate-180"
-                  src="../images/icon-arrow-black.svg"
+                  src="./src/images/icon-arrow-black.svg"
                   alt="carousel left-slide"
                 />
               </button>
@@ -137,27 +138,27 @@
               <button class="carousel-next">
                 <img
                   class="w-5 xl:w-auto h-5 xl:h-auto"
-                  src="../images/icon-arrow-black.svg"
+                  src="./src/images/icon-arrow-black.svg"
                   alt="carousel left-slide"
                 />
               </button>
             </div>
           </div>
           <div
-            class="carousel-item carousel-item-2 shrink-0 w-full xl:w-2/3 scale-[0.925] rounded-[50px] overflow-hidden"
+            class="carousel-item carousel-item-2 shrink-0 w-full xl:w-2/3 scale-[0.925] rounded-[50px] overflow-hidden duration-1000"
           >
             <img
               class="w-full object-cover"
-              src="../images/policy-2.jpg"
+              src="./src/images/policy-2.jpg"
               alt="policy-2-image"
             />
           </div>
           <div
-            class="carousel-item carousel-item-3 shrink-0 w-full xl:w-2/3 scale-[0.925] rounded-[50px] overflow-hidden"
+            class="carousel-item carousel-item-3 shrink-0 w-full xl:w-2/3 scale-[0.925] rounded-[50px] overflow-hidden duration-1000"
           >
             <img
               class="w-full object-cover"
-              src="../images/policy-3.jpg"
+              src="./src/images/policy-3.jpg"
               alt="policy-3-image"
             />
           </div>

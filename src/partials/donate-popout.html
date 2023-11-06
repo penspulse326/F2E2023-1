@@ -1,15 +1,15 @@
 <link rel="stylesheet" href="../../dist/output.css" />
 <div
-  class="popout hidden fixed top-0 z-50 justify-center items-center w-full h-full bg-[rgba(50,50,50,0.25)]"
+  class="popout fixed top-0 z-50 justify-center items-center px-4 w-full h-full bg-[rgba(50,50,50,0.25)]"
 >
   <div
-    class="donate-rule flex flex-col gap-6 p-6 max-w-[610px] bg-white border-[1px] border-slate-light rounded-md"
+    class="donate-rule hidden flex-col gap-6 p-6 max-w-[610px] bg-white border-[1px] border-slate-light rounded-md"
   >
     <button class="btn-close self-end">
-      <img src="./src/images/btn-close.svg" alt="button-close" />
+      <img src="../images/btn-close.svg" alt="button-close" />
     </button>
     <ul class="flex flex-col gap-2 list-disc list-inside text-sm">
-      <h3 class="text-pink text-base font-bold tracking-wider">
+      <h3 class="text-pink text-sm md:text-base xl:font-bold tracking-wider">
         對單一擬參選人捐贈額度規定
       </h3>
       <li class="text-slate">
@@ -38,7 +38,7 @@
       </li>
     </ul>
     <ul class="flex flex-col gap-2 list-disc list-inside text-sm">
-      <h3 class="text-pink text-base font-bold tracking-wider">
+      <h3 class="text-pink text-sm md:text-base xl:font-bold tracking-wider">
         不得捐贈政治獻金之對象
       </h3>
       <li class="text-slate">
@@ -57,31 +57,39 @@
     </button>
   </div>
   <div
-    class="donate-form hidden flex-col gap-6 p-6 max-w-[450px] bg-white border-[1px] border-slate-light rounded-md"
+    class="donate-form flex flex-col gap-6 p-6 max-w-[450px] bg-white border-[1px] border-slate-light rounded-md"
   >
     <button class="btn-close self-end">
-      <img src="./src/images/btn-close.svg" alt="button-close" />
+      <img src="../images/btn-close.svg" alt="button-close" />
     </button>
     <div class="flex flex-col gap-6">
       <ol
-        class="flex flex-col gap-2 mr-6 text-slate list-decimal list-inside text-sm tracking-widest"
+        class="flex flex-col gap-2 md:mr-6 text-slate list-decimal list-inside text-sm tracking-widest"
       >
-        <h3 class="mb-2 text-pink text-base font-bold tracking-wider">
+        <h3
+          class="mb-2 text-pink text-sm md:text-base xl:font-bold tracking-wider"
+        >
           不得捐贈政治獻金之對象
         </h3>
-        <p class="mb-2 text-black text-sm">
+        <p class="mb-2 text-black text-xs md:text-sm">
           請使用 ATM 虛擬帳號，照下列步驟付款
         </p>
-        <li>收款帳號將顯示於完成頁及 Email 付款通知。</li>
-        <li>請於 24 小時內使用網路銀行或實體 ATM 將匯款金額轉入收款帳號。</li>
-        <li>匯款金額須與訂單金額相符，金額不正確將造成訂單取消。</li>
-        <li>
+        <li class="text-[11px] md:text-sm">
+          收款帳號將顯示於完成頁及 Email 付款通知。
+        </li>
+        <li class="text-[11px] md:text-sm">
+          請於 24 小時內使用網路銀行或實體 ATM 將匯款金額轉入收款帳號。
+        </li>
+        <li class="text-[11px] md:text-sm">
+          匯款金額須與訂單金額相符，金額不正確將造成訂單取消。
+        </li>
+        <li class="text-[11px] md:text-sm">
           安全提醒：若第三方對您要求轉帳至私人帳號、在 ATM 解除分期付款、或掃描
           QR Code 進入非應援科技網站等，請提高警覺，切勿遵照指示。
         </li>
       </ol>
       <form action="#">
-        <ul class="flex flex-col gap-4 ml-6">
+        <ul class="flex flex-col gap-4 md:ml-6">
           <li class="flex items-center">
             <span class="shrink-0 mx-4 text-black">捐款金額</span
             ><input

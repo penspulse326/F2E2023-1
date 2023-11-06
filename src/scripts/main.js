@@ -80,7 +80,6 @@ function carousel() {
   const prev = $(".carousel-prev");
   const next = $(".carousel-next");
   const item = $(".carousel-item");
-  const mainStyle = ".policy-mainItem";
   const pages = $(".carousel-pagination li");
   const policyNumber = $(".policy-number");
   const policyContent = $(".policy-content");
@@ -101,18 +100,19 @@ function carousel() {
 
   function carouselStyleChange() {
     policyNumber.fadeOut(10);
-    // policyNumber.attr("src", `./src/images/policy-${currentIndex + 1}.svg`);
-    policyNumber.fadeIn(1000);
+    policyNumber.fadeIn(600);
+    policyNumber.text(`0${currentIndex + 1}`);
 
     policyContent.fadeOut(10);
-    // policyContent.html(policyContentText[currentIndex]);
+    policyContent.html(policyContentText[currentIndex]);
     policyContent.fadeIn(1000);
 
     item.css("transform", `translateX(-${100 * currentIndex}%) scale(0.925)`);
+    item.removeClass("policy-mainItem");
 
     $(`.carousel-item-${currentIndex + 1}`)
-      .addClass(mainStyle)
-      .css("transform", `translateX(-${99 * currentIndex}%)`);
+      .addClass("policy-mainItem")
+      .css("transform", `translateX(-${100 * currentIndex}%)`);
 
     pages.removeClass("bg-black");
     $(`.carousel-pagination-${currentIndex + 1}`).addClass("bg-black");
@@ -134,17 +134,17 @@ const policyContentText = [
       <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
         <img
           class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
-          src="../images/logo-paw.svg"
+          src="./src/images/logo-paw.svg"
           alt="paw"
         />
         設立
-        <span class="text-pink-mid tracking-wider">100,000,000</span>
+        <span class="text-pink-mid">100,000,000</span>
         醫療基金
       </p>
       <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
         <img
           class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
-          src="../images/logo-paw.svg"
+          src="./src/images/logo-paw.svg"
           alt="paw"
         />
         提供 <span class="text-pink-mid">20,000</span> 醫療補助
@@ -152,11 +152,11 @@ const policyContentText = [
       <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
         <img
           class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
-          src="../images/logo-paw.svg"
+          src="./src/images/logo-paw.svg"
           alt="paw"
         />
         合作
-        <span class="text-pink-mid tracking-wider">200+</span> 動物醫院
+        <span class="text-pink-mid">200+</span> 動物醫院
       </p>
     </div>`,
   `
@@ -173,31 +173,31 @@ const policyContentText = [
       <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
         <img
           class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
-          src="../images/logo-paw.svg"
+          src="./src/images/logo-paw.svg"
           alt="paw"
         />
         撥款
-        <span class="text-pink-mid tracking-wider">500,000,000</span
+        <span class="text-pink-mid">500,000,000</span
         >建立公園
       </p>
       <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
         <img
           class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
-          src="../images/logo-paw.svg"
+          src="./src/images/logo-paw.svg"
           alt="paw"
         />
         合作
-        <span class="text-pink-mid tracking-wider">500+</span>
+        <span class="text-pink-mid">500+</span>
         寵物友善店家
       </p>
       <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
         <img
           class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
-          src="../images/logo-paw.svg"
+          src="./src/images/logo-paw.svg"
           alt="paw"
         />
         每年舉辦
-        <span class="text-pink-mid tracking-wider">5+ </span> 大型寵物活動
+        <span class="text-pink-mid">5+ </span> 大型寵物活動
       </p>
     </div>`,
   `
@@ -214,26 +214,26 @@ const policyContentText = [
     <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
       <img
         class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
-        src="../images/logo-paw.svg"
+        src="./src/images/logo-paw.svg"
         alt="paw"
       />
-      建立<span class="text-pink-mid tracking-wider">5</span
+      建立<span class="text-pink-mid">5</span
       >大城市飼養教育中心
     </p>
     <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
       <img
         class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
-        src="../images/logo-paw.svg"
+        src="./src/images/logo-paw.svg"
         alt="paw"
       />
       提供
-      <span class="text-pink-mid tracking-wider">10,000+</span>
+      <span class="text-pink-mid">10,000+</span>
       市民免費課程
     </p>
     <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
       <img
         class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
-        src="../images/logo-paw.svg"
+        src="./src/images/logo-paw.svg"
         alt="paw"
       />
       製作寵物教育手冊及課程
