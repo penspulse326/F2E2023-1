@@ -1,82 +1,154 @@
 <link rel="stylesheet" href="../../dist/output.css" />
+<!-- donate -->
 <section
-  class="section-donate pt-10 pb-20 bg-dots-r bg-no-repeat bg-center bg-contain"
+  class="section-donate pt-6 pb-10 md:pb-12 xl:pt-10 xl:pb-20 bg-paws bg-center bg-cover"
 >
-  <div class="container mx-auto">
-    <div class="grid grid-cols-12 gap-x-[30px] grid-box mx-auto">
-      <div class="col-span-4 flex items-center pt-4 pr-8">
-        <ul class="absolute flex gap-1 -ml-16 pt-4">
-          <li class="w-3 h-3 bg-brown rounded-xl"></li>
-          <li class="w-3 h-3 bg-gray-light rounded-xl"></li>
-          <li class="w-3 h-3 bg-gray-light rounded-xl"></li>
-        </ul>
-        <div
-          class="relative flex items-center w-full max-h-[96px] bg-pink rounded-3xl"
-        >
-          <div class="relative self-end ml-2 max-w-[160px]">
-            <img src="./src/images/title-image.png" alt="title-image" />
-          </div>
-          <h2 class="ml-7 text-white text-[32px] font-bold">線上捐款</h2>
-        </div>
+  <div class="container mx-auto box-p">
+    <!-- title -->
+    <div
+      class="relative z-10 col-span-2 xl:col-span-4 flex items-center xl:mr-8 xl:pt-4 max-w-[410px]"
+    >
+      <ul class="absolute hidden xl:flex gap-1 mt-4 -ml-16">
+        <li class="w-3 h-3 bg-brown rounded-xl"></li>
+        <li class="w-3 h-3 bg-gray-light rounded-xl"></li>
+        <li class="w-3 h-3 bg-gray-light rounded-xl"></li>
+      </ul>
+      <div class="flex items-center w-full xl:h-24 xl:bg-pink rounded-3xl">
+        <img
+          class="hidden xl:block self-end ml-2 w-40"
+          src="../images/title-image.png"
+          alt="title-image"
+        />
+        <h2 class="title before:bg-brown">線上捐款</h2>
       </div>
     </div>
-    <div class="relative mt-10 mx-auto grid-box">
-      <h3 class="mb-2 text-black text-2xl font-bold text-center">
+    <!-- content -->
+    <div class="relative flex flex-col items-center mt-4 md:mt-6 xl:mt-10">
+      <img
+        class="hidden xl:block absolute xl:-left-20 2xl:-left-14 xl:-bottom-12"
+        src="../images/square-dots.svg"
+        alt="dots"
+      />
+      <img
+        class="hidden xl:block absolute xl:-right-20 2xl:-right-10 top-8"
+        src="../images/square-dots.svg"
+        alt="dots"
+      />
+      <h3
+        class="text-black text-sm md:text-base xl:text-2xl text-center font-bold tracking-widest"
+      >
         您的小筆捐款，是每隻毛孩未來的大大動力！
       </h3>
-      <p class="text-center">謝謝您的捐款，我們期待集合眾人的力量來改造台灣</p>
-      <ul class="flex gap-8 mt-10 px-6">
-        <li class="card-donate">
-          <img
-            class="mb-2"
-            src="./src/images/donate-1.png"
-            alt="donate-NTD600"
-          />
-          <h4 class="mb-2 text-black text-xl font-bold">喵星人之友</h4>
-          <span class="mb-4 text-[#A66641] font-semibold">NT 600</span>
-          <button class="btn-donate" href="#" dollar="600">
-            成為喵星人之友
-          </button>
-          <span class="text-black text-sm">已有 9,957 喵喵夥伴贊助</span>
+      <p class="hidden xl:block mt-2 text-center tracking-widest">
+        謝謝您的捐款，我們期待集合眾人的力量來改造台灣
+      </p>
+      <p
+        class="xl:hidden mt-1 text-black text-sm md:text-base text-center tracking-widest"
+      >
+        我們期待集合眾人的力量來改造台灣
+      </p>
+      <ul
+        class="flex flex-col xl:flex-row gap-6 xl:gap-8 mt-4 xl:mt-12 px-7 xl:px-6"
+      >
+        <li class="card-donate donate-tilt">
+          <div class="xl:mb-2">
+            <img
+              class="rounded-[50%]"
+              src="../images/donate-1.svg"
+              alt="donate-NTD600"
+            />
+          </div>
+          <div class="flex flex-col items-center">
+            <h4 class="text-black text-sm md:text-base xl:text-xl xl:font-bold">
+              喵星人之友
+            </h4>
+            <span
+              class="mt-1 xl:mt-2 text-[#A66641] text-[11px] md:text-sm xl:text-base font-semibold"
+              >NT 600</span
+            >
+            <button class="btn-donate" href="#" dollar="600">
+              成為喵星人之友
+            </button>
+            <span
+              class="mt-2 md:mt-4 text-black text-[10px] md:text-[11px] xl:text-sm tracking-wider whitespace-nowrap"
+              >已有 9,957 喵喵夥伴贊助</span
+            >
+          </div>
         </li>
-        <li class="card-donate">
-          <img
-            class="mb-2"
-            src="./src/images/donate-2.png"
-            alt="donate-NTD6,000"
-          />
-          <h4 class="mb-2 text-black text-xl font-bold">喵星大使</h4>
-          <span class="mb-4 text-[#A66641] font-semibold">NT 6000</span>
-          <button class="btn-donate" href="#" dollar="6000">
-            成為喵星大使
-          </button>
-          <span class="text-black text-sm">已有 2,000 喵喵夥伴贊助</span>
+        <li class="card-donate donate-tilt">
+          <div class="xl:mb-2">
+            <img
+              class="rounded-[50%]"
+              src="../images/donate-2.svg"
+              alt="donate-NTD6000"
+            />
+          </div>
+          <div class="flex flex-col items-center">
+            <h4 class="text-black text-sm md:text-base xl:text-xl xl:font-bold">
+              喵星大使
+            </h4>
+            <span
+              class="mt-1 xl:mt-2 text-[#A66641] text-[11px] md:text-sm xl:text-base font-semibold"
+              >NT 6000</span
+            >
+            <button class="btn-donate" href="#" dollar="600">
+              成為喵星大使
+            </button>
+            <span
+              class="mt-2 md:mt-4 text-black text-[10px] md:text-[11px] xl:text-sm tracking-wider whitespace-nowrap"
+              >已有 2,000 喵喵夥伴贊助</span
+            >
+          </div>
         </li>
-        <li class="card-donate">
-          <img
-            class="mb-2"
-            src="./src/images/donate-3.png"
-            alt="donate-NTD6,0000"
-          />
-          <h4 class="mb-2 text-black text-xl font-bold">喵星傳奇</h4>
-          <span class="mb-4 text-[#A66641] font-semibold">NT 60000</span>
-          <button class="btn-donate" href="#" dollar="60000">
-            成為喵星傳奇
-          </button>
-          <span class="text-black text-sm">已有 999 喵喵夥伴贊助</span>
+        <li class="card-donate donate-tilt">
+          <div class="xl:mb-2">
+            <img
+              class="rounded-[50%]"
+              src="../images/donate-3.svg"
+              alt="donate-NTD6000"
+            />
+          </div>
+          <div class="flex flex-col items-center">
+            <h4 class="text-black text-sm md:text-base xl:text-xl xl:font-bold">
+              喵星傳奇
+            </h4>
+            <span
+              class="mt-1 xl:mt-2 text-[#A66641] text-[11px] md:text-sm xl:text-base font-semibold"
+              >NT 60000</span
+            >
+            <button class="btn-donate" href="#" dollar="60000">
+              成為喵星傳奇
+            </button>
+            <span
+              class="mt-2 md:mt-4 text-black text-[10px] md:text-[11px] xl:text-sm tracking-wider whitespace-nowrap"
+              >已有 999 喵喵夥伴贊助</span
+            >
+          </div>
         </li>
-        <li class="card-donate">
-          <img
-            class="mb-2"
-            src="./src/images/donate-4.png"
-            alt="donate-custom"
-          />
-          <h4 class="mb-2 text-black text-xl font-bold">喵星愛人</h4>
-          <span class="mb-4 text-[#A66641] font-semibold"
-            >自訂金額，心意無價</span
-          >
-          <button class="btn-donate" href="#" dollar="">成為喵喵愛人</button>
-          <span class="text-black text-sm">已有 999 喵喵夥伴贊助</span>
+        <li class="card-donate donate-tilt">
+          <div class="xl:mb-2">
+            <img
+              class="rounded-[50%]"
+              src="../images/donate-4.svg"
+              alt="donate-NTD600"
+            />
+          </div>
+          <div class="flex flex-col items-center">
+            <h4 class="text-black text-sm md:text-base xl:text-xl xl:font-bold">
+              喵喵愛人
+            </h4>
+            <span
+              class="mt-1 xl:mt-2 text-[#A66641] text-[11px] md:text-sm xl:text-base font-semibold"
+              >自訂金額，心意無價</span
+            >
+            <button class="btn-donate" href="#" dollar="600">
+              成為喵喵愛人
+            </button>
+            <span
+              class="mt-2 md:mt-4 text-black text-[10px] md:text-[11px] xl:text-sm tracking-wider whitespace-nowrap"
+              >已有 999 喵喵夥伴贊助</span
+            >
+          </div>
         </li>
       </ul>
     </div>

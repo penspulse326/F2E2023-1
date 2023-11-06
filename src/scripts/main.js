@@ -1,6 +1,8 @@
 $(document).ready(function () {
-  AOS.init();
   carousel();
+
+  // $(".donate-tilt").tilt();
+  // $(".slogan-tilt").tilt();
 
   // scroll 回到頂端按鈕
   $(".btn-goTop").on("click", (e) => {
@@ -78,7 +80,7 @@ function carousel() {
   const prev = $(".carousel-prev");
   const next = $(".carousel-next");
   const item = $(".carousel-item");
-  const mainStyle = "news-mainItem";
+  const mainStyle = ".policy-mainItem";
   const pages = $(".carousel-pagination li");
   const policyNumber = $(".policy-number");
   const policyContent = $(".policy-content");
@@ -106,9 +108,8 @@ function carousel() {
     policyContent.html(policyContentText[currentIndex]);
     policyContent.fadeIn(1000);
 
-    item
-      .css("transform", `translateX(-${100 * currentIndex}%) scale(0.925)`)
-      .removeClass("news-mainItem");
+    item.css("transform", `translateX(-${100 * currentIndex}%) scale(0.925)`);
+
     $(`.carousel-item-${currentIndex + 1}`)
       .addClass(mainStyle)
       .css("transform", `translateX(-${99 * currentIndex}%)`);

@@ -11,37 +11,79 @@
 }
 
 @layer components {
-  .grid-box {
-    @apply md:max-w-grid-md lg:max-w-grid-lg;
+  /* container space */
+  .box-p {
+    @apply px-3 md:px-9 xl:px-[88.5px];
   }
 
-  .logo {
-    @apply flex items-center;
+  /* burger button for mobile */
+  .burger-button:checked ~ img {
+    @apply rotate-90 duration-300;
+  }
+  .burger-button:checked ~ .burger-list {
+    @apply block;
+    animation: menu 0.3s;
   }
 
-  .logo:hover img {
-    transform: rotate(15deg) scale(1.5);
-    transition: 0.3s;
+  /* section title */
+  .title {
+    @apply relative col-span-2 flex items-end xl:ml-4 xl:mr-8 text-black xl:text-white md:text-xl xl:text-[28px] xl:text-[32px] font-bold;
+  }
+  .title::before {
+    @apply absolute bottom-[2px] left-3 block w-16 h-3 md:w-24 md:h-4 content-['*'] text-transparent md:text-sm -z-10;
   }
 
-  .nav-paw {
-    @apply hidden lg:block lg:mr-4 w-5 h-5 duration-300;
-  }
-
-  .nav-sns-link {
-    @apply p-2 w-8 h-8 bg-white border-gray-light border-[1px] rounded-[50%] duration-300 hover:scale-150;
-  }
-
-  .nav-donate:hover {
-    @apply bg-white text-pink-mid;
-  }
-
-  .news-mainItem {
+  .policy-mainItem {
     @apply border-[#000000] border-2 rounded-[50px];
   }
 
-  .btn-goDonate {
-    @apply col-span-2 self-start flex justify-center items-center py-3 text-pink-mid text-xl font-bold bg-white rounded-[6px];
+  /* section news */
+  .news-content {
+    @apply absolute flex-col justify-center items-center xl:p-0 w-full h-full bg-black-mid rounded-[50px] tracking-widest text-center;
+  }
+  .news-date {
+    @apply xl:hidden absolute bottom-2 md:bottom-0 flex justify-center items-center px-3 py-1 md:py-4 md:w-full bg-[rgba(0,0,0,0.5)] rounded-[10px] text-white text-[8px] md:text-xs;
+    backdrop-filter: blur(4px);
+  }
+  .news-checkbox:checked ~ .news-date {
+    @apply hidden;
+  }
+
+  .news-checkbox:checked ~ .news-content {
+    @apply flex xl:hidden;
+  }
+
+  .card-donate {
+    @apply flex flex-row  xl:flex-col justify-between xl:justify-center items-center gap-6 px-3  md:px-[17.5px] xl:px-[52px] py-5 md:py-[14.5px] xl:py-3 bg-brown border xl:border-0 border-black rounded-3xl;
+    transform-style: preserve-3d;
+  }
+
+  .card-donate img {
+    @apply w-[100px] md:w-40 xl:w-[200px] h-[100px] md:h-40 xl:h-[200px]
+  }
+
+  .btn-donate {
+    @apply block mt-2 md:mt-4 py-2 xl:py-3 bg-black w-[100px] md:w-[120px] xl:w-36 text-white text-[11px] md:text-xs xl:text-base rounded-md hover:bg-gray-900 duration-300 tracking-widest;
+  }
+
+  .btn-form {
+    @apply block px-4 py-2 bg-black text-white rounded-md hover:bg-gray-900 duration-300;
+  }
+
+  .form-input {
+    @apply mt-[10px] px-4 py-3 w-full md:h-10 xl:h-auto border-gray-light border rounded-md text-sm xl:text-base focus:border-black focus:outline-none focus:ring-0;
+  }
+
+  .donate-input {
+    @apply py-2 px-3 w-full h-9 text-sm border border-slate-light rounded-md  placeholder:text-slate focus:border-black focus:outline-none focus:ring-0;
+  }
+
+  .slogan-paw {
+    @apply w-5 xl:w-[44px] h-5 xl:h-[44px] rotate-12 duration-300;
+  }
+
+  .paw:hover img {
+    @apply rotate-12 scale-150 duration-300;
   }
 
   .btn-goDonate:hover img {
@@ -51,40 +93,16 @@
   .btn-goTop:hover {
     @apply duration-300 scale-150;
   }
-
-  .btn-donate {
-    @apply block mb-4 px-7 py-3 bg-black text-white rounded-md hover:bg-gray-900 duration-300;
-  }
-
-  .btn-form {
-    @apply block px-4 py-2 bg-black text-white rounded-md hover:bg-gray-900 duration-300;
-  }
-
-  .card-donate {
-    @apply flex flex-col justify-center items-center md:px-8 2xl:px-12 py-3 bg-brown rounded-3xl;
-  }
-
-  .form-input {
-    @apply px-4 py-3 w-full border-gray-light border-[1px] rounded-md focus:border-black focus:outline-none focus:ring-0;
-  }
-
-  .donate-input {
-    @apply py-2 px-3 w-full h-9 text-sm border-[1px] border-slate-light rounded-md  placeholder:text-slate focus:border-black focus:outline-none focus:ring-0;
-  }
-
-  .footer-link {
-    @apply p-[10px] w-10 h-10 bg-white border-gray-light border-[1px] rounded-[50%] duration-300 hover:scale-110;
-  }
 }
 
 @layer utilities {
   .writing-v {
     writing-mode: vertical-lr;
   }
-}
 
-.slogan {
-  background-attachment: fixed;
+  .bg-fixed {
+    background-attachment: fixed;
+  }
 }
 
 .section-policy {
@@ -100,28 +118,99 @@
 }
 
 .news-slider {
-  animation: newsSlide 15s linear infinite alternate;
+  animation: newsSlide 10s linear infinite alternate;
 }
 
 .news-slider:hover {
   animation-play-state: paused;
 }
 
+.section-donate {
+  background-attachment: fixed;
+}
+
+/* .card-donate:hover img {
+  box-shadow: 0 1px 10px 0px gray;
+  transform: translateZ(0px);
+} */
+
 .carousel-item {
   transition: 1s;
 }
 
-@keyframes jumping {
-  0% {
-    transform: scale(1);
+.paws li {
+  animation: jumping 1.5s ease-in-out infinite;
+}
+.paws li:nth-child(1) {
+  animation-delay: 0s;
+}
+.paws li:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.paws li:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.paws li:nth-child(4) {
+  animation-delay: 0.45s;
+}
+.paws li:nth-child(5) {
+  animation-delay: 0.6s;
+}
+.paws li:nth-child(6) {
+  animation-delay: 0.75s;
+}
+
+@media (max-width: 767px) {
+  .btn-goDonate img {
+    content: url("../src/images/icon-arrow-sm.svg");
   }
 
-  50% {
-    transform: scale(0.9);
+
+  .policy-number-1 {
+    content: url("../src/images/policy-1-sm.svg");
+  }
+}
+
+@media (max-width: 1279px) {
+  .header-image {
+    content: url("../src/images/header-image-sm.svg");
+  }
+
+  .news-img-1 {
+    content: url("../src/images/news-1-sm.jpg");
+  }
+  .news-img-2 {
+    content: url("../src/images/news-2-sm.jpg");
+  }
+  .news-img-3 {
+    content: url("../src/images/news-3-sm.jpg");
+  }
+
+}
+
+@keyframes menu {
+  0% {
+    transform-origin: top;
+    transform: scaleY(0);
   }
 
   100% {
-    transform: scale(1);
+    transform-origin: top;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes jumping {
+  0% {
+    transform: scale(1) rotate(12deg);
+  }
+
+  50% {
+    transform: scale(1.25) rotate(-12deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(12deg);
   }
 }
 

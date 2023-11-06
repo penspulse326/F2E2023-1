@@ -7,7 +7,7 @@ module.exports = {
         pink: {
           DEFAULT: "#F2B4AE",
           mid: "#F29188",
-          light: `rgba(242, 180, 174, 0.15)`,
+          light: `#FDF4F3`,
         },
         brown: {
           DEFAULT: "#F2DCC9",
@@ -15,6 +15,7 @@ module.exports = {
         },
         black: {
           DEFAULT: "#414141",
+          mid: "rgba(65, 65, 65, 0.9)",
           light: "rgba(65, 65, 65, 0.05)",
         },
         gray: {
@@ -30,12 +31,10 @@ module.exports = {
         circle: "url(../src/images/bg-circle.svg)",
         dots: "url(../src/images/bg-dots.svg)",
         "dots-r": "url(../src/images/bg-dots-reverse.svg)",
+        "dots-r-sm": "url(../src/images/bg-dots-reverse-sm.svg)",
         paws: "url(../src/images/bg-paws.svg)",
+        "paws-sm": "url(../src/images/bg-paws-sm.svg)",
       },
-    },
-    maxWidth: {
-      "grid-lg": "1360px",
-      "grid-md": "736px",
     },
     fontFamily: {
       sans: ["Noto Sans TC", "sans-serif"],
