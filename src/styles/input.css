@@ -59,7 +59,7 @@
   }
 
   .card-donate img {
-    @apply w-[100px] md:w-40 xl:w-[200px] h-[100px] md:h-40 xl:h-[200px]
+    @apply w-[100px] md:w-40 xl:w-[200px] h-[100px] md:h-40 xl:h-[200px];
   }
 
   .btn-donate {
@@ -160,20 +160,19 @@
   animation-delay: 0.75s;
 }
 
-@media (max-width: 767px) {
-  .btn-goDonate img {
-    content: url("../src/images/icon-arrow-sm.svg");
-  }
-
-
-  .policy-number-1 {
-    content: url("../src/images/policy-1-sm.svg");
-  }
-}
-
 @media (max-width: 1279px) {
   .header-image {
     content: url("../src/images/header-image-sm.svg");
+  }
+
+  .carousel-item-1 img {
+    content: url("../src/images/policy-1-md.jpg");
+  }
+  .carousel-item-2 img {
+    content: url("../src/images/policy-2-md.jpg");
+  }
+  .carousel-item-3 img {
+    content: url("../src/images/policy-3-md.jpg");
   }
 
   .news-img-1 {
@@ -185,7 +184,22 @@
   .news-img-3 {
     content: url("../src/images/news-3-sm.jpg");
   }
+}
 
+@media (max-width: 767px) {
+  .btn-goDonate img {
+    content: url("../src/images/icon-arrow-sm.svg");
+  }
+
+  .carousel-item-1 img {
+    content: url("../src/images/policy-1-sm.jpg");
+  }
+  .carousel-item-2 img {
+    content: url("../src/images/policy-2-sm.jpg");
+  }
+  .carousel-item-3 img {
+    content: url("../src/images/policy-3-sm.jpg");
+  }
 }
 
 @keyframes menu {

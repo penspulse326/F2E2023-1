@@ -101,11 +101,11 @@ function carousel() {
 
   function carouselStyleChange() {
     policyNumber.fadeOut(10);
-    policyNumber.attr("src", `./src/images/policy-${currentIndex + 1}.svg`);
+    // policyNumber.attr("src", `./src/images/policy-${currentIndex + 1}.svg`);
     policyNumber.fadeIn(1000);
 
     policyContent.fadeOut(10);
-    policyContent.html(policyContentText[currentIndex]);
+    // policyContent.html(policyContentText[currentIndex]);
     policyContent.fadeIn(1000);
 
     item.css("transform", `translateX(-${100 * currentIndex}%) scale(0.925)`);
@@ -120,51 +120,123 @@ function carousel() {
 }
 
 const policyContentText = [
-  `<h3 class="mb-8 text-black text-2xl font-bold">
-    為毛孩子謀福利！推動寵物醫療保障方案
-  </h3>
-  <p class="flex items-center gap-x-2 text-gray">
-    <img src="./src/images/logo-paw-sm.svg" alt="paw" />
-    設立 <span class="text-pink-mid">100,000,000</span> 醫療基金
-  </p>
-  <p class="flex items-center gap-x-2 text-gray">
-    <img src="./src/images/logo-paw-sm.svg" alt="paw" />
-    提供 <span class="text-pink-mid">20,000</span> 醫療補助
-  </p>
-  <p class="flex items-center gap-x-2 text-gray">
-    <img src="./src/images/logo-paw-sm.svg" alt="paw" />
-    合作 <span class="text-pink-mid">200+</span> 動物醫院
-  </p>`,
-
-  `<h3 class="mb-8 text-black text-2xl font-bold">
-    打造休閒天堂！推廣寵物休閒與娛樂場所
-  </h3>
-  <p class="flex items-center gap-x-2 text-gray">
-    <img src="./src/images/logo-paw-sm.svg" alt="paw" />
-    撥款 <span class="text-pink-mid">500,000,000</span> 建立寵物公園
-  </p>
-  <p class="flex items-center gap-x-2 text-gray">
-    <img src="./src/images/logo-paw-sm.svg" alt="paw" />
-    合作 <span class="text-pink-mid">500+</span> 寵物友善店家
-  </p>
-  <p class="flex items-center gap-x-2 text-gray">
-    <img src="./src/images/logo-paw-sm.svg" alt="paw" />
-    每年舉辦  <span class="text-pink-mid">5+ </span> 大型寵物活動
-  </p>`,
-
-  `<h3 class="mb-8 text-black text-2xl font-bold">
+  `
+    <h3 class="hidden xl:block text-black text-2xl font-bold">
+      為毛孩子謀福利！推動寵物醫療保障方案
+    </h3>
+    <h3 class="xl:hidden mt-2 md:m-0 text-black text-sm md:text-base">
+      為毛孩子謀福利！<br />
+      推動寵物醫療保障方案
+    </h3>
+    <div
+      class="flex flex-col gap-1 md:gap-3 mt-4 md:mt-6 xl:mt-0 xl:-ml-3 text-[10px] md:text-sm xl:text-base"
+    >
+      <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
+        <img
+          class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
+          src="../images/logo-paw.svg"
+          alt="paw"
+        />
+        設立
+        <span class="text-pink-mid tracking-wider">100,000,000</span>
+        醫療基金
+      </p>
+      <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
+        <img
+          class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
+          src="../images/logo-paw.svg"
+          alt="paw"
+        />
+        提供 <span class="text-pink-mid">20,000</span> 醫療補助
+      </p>
+      <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
+        <img
+          class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
+          src="../images/logo-paw.svg"
+          alt="paw"
+        />
+        合作
+        <span class="text-pink-mid tracking-wider">200+</span> 動物醫院
+      </p>
+    </div>`,
+  `
+    <h3 class="hidden xl:block text-black text-2xl font-bold">
+      打造休閒天堂！推廣寵物休閒與娛樂場所
+    </h3>
+    <h3 class="xl:hidden mt-2 md:m-0 text-black text-sm md:text-base">
+      打造休閒天堂！<br />
+      推廣寵物休閒與娛樂場所
+    </h3>
+    <div
+      class="flex flex-col gap-1 md:gap-3 mt-4 md:mt-6 xl:mt-0xl:-ml-3 text-[10px] md:text-sm xl:text-base"
+    >
+      <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
+        <img
+          class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
+          src="../images/logo-paw.svg"
+          alt="paw"
+        />
+        撥款
+        <span class="text-pink-mid tracking-wider">500,000,000</span
+        >建立公園
+      </p>
+      <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
+        <img
+          class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
+          src="../images/logo-paw.svg"
+          alt="paw"
+        />
+        合作
+        <span class="text-pink-mid tracking-wider">500+</span>
+        寵物友善店家
+      </p>
+      <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
+        <img
+          class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
+          src="../images/logo-paw.svg"
+          alt="paw"
+        />
+        每年舉辦
+        <span class="text-pink-mid tracking-wider">5+ </span> 大型寵物活動
+      </p>
+    </div>`,
+  `
+  <h3 class="hidden xl:block text-black text-2xl font-bold">
     推廣寵物飼養教育，讓愛更加專業
   </h3>
-  <p class="flex items-center gap-x-2 text-gray">
-    <img src="./src/images/logo-paw-sm.svg" alt="paw" />
-    建立 <span class="text-pink-mid">5</span> 大城市飼養教育中心
-  </p>
-  <p class="flex items-center gap-x-2 text-gray">
-    <img src="./src/images/logo-paw-sm.svg" alt="paw" />
-    提供 <span class="text-pink-mid">10,000+</span> 市民免費飼養課程
-  </p>
-  <p class="flex items-center gap-x-2 text-gray">
-    <img src="./src/images/logo-paw-sm.svg" alt="paw" />
-    製作寵物教育手冊及線上課程
-  </p>`,
+  <h3 class="xl:hidden mt-2 md:m-0 text-black text-sm md:text-base">
+    推廣寵物飼養教育<br />
+    讓愛更加專業
+  </h3>
+  <div
+    class="flex flex-col gap-1 md:gap-3 mt-4 md:mt-6 xl:mt-0 xl:-ml-3 text-[10px] md:text-sm xl:text-base"
+  >
+    <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
+      <img
+        class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
+        src="../images/logo-paw.svg"
+        alt="paw"
+      />
+      建立<span class="text-pink-mid tracking-wider">5</span
+      >大城市飼養教育中心
+    </p>
+    <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
+      <img
+        class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
+        src="../images/logo-paw.svg"
+        alt="paw"
+      />
+      提供
+      <span class="text-pink-mid tracking-wider">10,000+</span>
+      市民免費課程
+    </p>
+    <p class="flex items-center gap-1 xl:gap-x-2 text-gray">
+      <img
+        class="w-5 h-5 xl:w-6 xl:h-6 -rotate-45"
+        src="../images/logo-paw.svg"
+        alt="paw"
+      />
+      製作寵物教育手冊及課程
+    </p>
+  </div>`,
 ];

@@ -1265,6 +1265,10 @@ video {
   width: 0.5rem;
 }
 
+.w-28{
+  width: 7rem;
+}
+
 .w-3{
   width: 0.75rem;
 }
@@ -1345,6 +1349,11 @@ video {
   flex-grow: 1;
 }
 
+.-rotate-45{
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .rotate-180{
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1374,6 +1383,10 @@ video {
 
 .grid-cols-4{
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.grid-rows-\[auto\2c 1fr\]{
+  grid-template-rows: auto 1fr;
 }
 
 .flex-col{
@@ -1453,10 +1466,6 @@ video {
 
 .overflow-hidden{
   overflow: hidden;
-}
-
-.overflow-x-hidden{
-  overflow-x: hidden;
 }
 
 .whitespace-nowrap{
@@ -1801,6 +1810,10 @@ video {
   line-height: 1;
 }
 
+.tracking-\[0\.325em\]{
+  letter-spacing: 0.325em;
+}
+
 .tracking-\[0\.5em\]{
   letter-spacing: 0.5em;
 }
@@ -1816,6 +1829,11 @@ video {
 .text-\[\#637381\]{
   --tw-text-opacity: 1;
   color: rgb(99 115 129 / var(--tw-text-opacity));
+}
+
+.text-\[\#959292\]{
+  --tw-text-opacity: 1;
+  color: rgb(149 146 146 / var(--tw-text-opacity));
 }
 
 .text-\[\#A66641\]{
@@ -1937,19 +1955,21 @@ video {
   animation-delay: 0.75s;
 }
 
-@media (max-width: 767px) {
-  .btn-goDonate img {
-    content: url("../src/images/icon-arrow-sm.svg");
-  }
-
-  .policy-number-1 {
-    content: url("../src/images/policy-1-sm.svg");
-  }
-}
-
 @media (max-width: 1279px) {
   .header-image {
     content: url("../src/images/header-image-sm.svg");
+  }
+
+  .carousel-item-1 img {
+    content: url("../src/images/policy-1-md.jpg");
+  }
+
+  .carousel-item-2 img {
+    content: url("../src/images/policy-2-md.jpg");
+  }
+
+  .carousel-item-3 img {
+    content: url("../src/images/policy-3-md.jpg");
   }
 
   .news-img-1 {
@@ -1962,6 +1982,24 @@ video {
 
   .news-img-3 {
     content: url("../src/images/news-3-sm.jpg");
+  }
+}
+
+@media (max-width: 767px) {
+  .btn-goDonate img {
+    content: url("../src/images/icon-arrow-sm.svg");
+  }
+
+  .carousel-item-1 img {
+    content: url("../src/images/policy-1-sm.jpg");
+  }
+
+  .carousel-item-2 img {
+    content: url("../src/images/policy-2-sm.jpg");
+  }
+
+  .carousel-item-3 img {
+    content: url("../src/images/policy-3-sm.jpg");
   }
 }
 
@@ -2098,6 +2136,10 @@ video {
     order: 0;
   }
 
+  .md\:col-span-1{
+    grid-column: span 1 / span 1;
+  }
+
   .md\:col-span-3{
     grid-column: span 3 / span 3;
   }
@@ -2112,6 +2154,10 @@ video {
 
   .md\:col-start-3{
     grid-column-start: 3;
+  }
+
+  .md\:m-0{
+    margin: 0px;
   }
 
   .md\:-mx-2{
@@ -2176,8 +2222,24 @@ video {
     width: 216px;
   }
 
+  .md\:w-full{
+    width: 100%;
+  }
+
+  .md\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-6{
     grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .md\:items-center{
+    align-items: center;
+  }
+
+  .md\:gap-3{
+    gap: 0.75rem;
   }
 
   .md\:gap-8{
@@ -2187,6 +2249,10 @@ video {
   .md\:bg-pink{
     --tw-bg-opacity: 1;
     background-color: rgb(242 180 174 / var(--tw-bg-opacity));
+  }
+
+  .md\:bg-contain{
+    background-size: contain;
   }
 
   .md\:p-\[10px\]{
@@ -2325,6 +2391,10 @@ video {
     grid-column: span 10 / span 10;
   }
 
+  .xl\:col-span-2{
+    grid-column: span 2 / span 2;
+  }
+
   .xl\:col-span-4{
     grid-column: span 4 / span 4;
   }
@@ -2353,6 +2423,10 @@ video {
   .xl\:my-8{
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .xl\:-ml-3{
+    margin-left: -0.75rem;
   }
 
   .xl\:mb-2{
@@ -2399,12 +2473,20 @@ video {
     margin-top: 1.75rem;
   }
 
+  .xl\:mt-8{
+    margin-top: 2rem;
+  }
+
   .xl\:mt-\[86px\]{
     margin-top: 86px;
   }
 
   .xl\:block{
     display: block;
+  }
+
+  .xl\:inline{
+    display: inline;
   }
 
   .xl\:flex{
@@ -2427,6 +2509,10 @@ video {
     height: 8rem;
   }
 
+  .xl\:h-6{
+    height: 1.5rem;
+  }
+
   .xl\:h-\[100px\]{
     height: 100px;
   }
@@ -2435,12 +2521,28 @@ video {
     height: 70px;
   }
 
+  .xl\:h-auto{
+    height: auto;
+  }
+
   .xl\:w-12{
     width: 3rem;
   }
 
+  .xl\:w-2\/3{
+    width: 66.666667%;
+  }
+
+  .xl\:w-6{
+    width: 1.5rem;
+  }
+
   .xl\:w-\[436px\]{
     width: 436px;
+  }
+
+  .xl\:w-\[65\%\]{
+    width: 65%;
   }
 
   .xl\:w-\[70px\]{
@@ -2461,6 +2563,10 @@ video {
 
   .xl\:grid-cols-12{
     grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .xl\:flex-row{
@@ -2487,6 +2593,11 @@ video {
     gap: 30px;
   }
 
+  .xl\:gap-x-2{
+    -moz-column-gap: 0.5rem;
+         column-gap: 0.5rem;
+  }
+
   .xl\:gap-x-8{
     -moz-column-gap: 2rem;
          column-gap: 2rem;
@@ -2495,10 +2606,6 @@ video {
   .xl\:gap-x-\[30px\]{
     -moz-column-gap: 30px;
          column-gap: 30px;
-  }
-
-  .xl\:overflow-auto{
-    overflow: auto;
   }
 
   .xl\:overflow-visible{
@@ -2591,8 +2698,16 @@ video {
     padding-bottom: 5rem;
   }
 
+  .xl\:pb-8{
+    padding-bottom: 2rem;
+  }
+
   .xl\:pb-\[60px\]{
     padding-bottom: 60px;
+  }
+
+  .xl\:pt-1{
+    padding-top: 0.25rem;
   }
 
   .xl\:pt-10{
@@ -2640,8 +2755,17 @@ video {
     font-weight: 700;
   }
 
+  .xl\:tracking-normal{
+    letter-spacing: 0em;
+  }
+
   .xl\:tracking-wider{
     letter-spacing: 0.05em;
+  }
+
+  .xl\:text-black{
+    --tw-text-opacity: 1;
+    color: rgb(65 65 65 / var(--tw-text-opacity));
   }
 }
 
