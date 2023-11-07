@@ -1658,16 +1658,6 @@ video {
   padding-bottom: 6px;
 }
 
-.px-\[27\.5px\]{
-  padding-left: 27.5px;
-  padding-right: 27.5px;
-}
-
-.px-6{
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .pb-10{
   padding-bottom: 2.5rem;
 }
@@ -2106,6 +2096,14 @@ video {
     margin-right: 0px;
   }
 
+  .md\:ml-6{
+    margin-left: 1.5rem;
+  }
+
+  .md\:mr-6{
+    margin-right: 1.5rem;
+  }
+
   .md\:mt-0{
     margin-top: 0px;
   }
@@ -2120,14 +2118,6 @@ video {
 
   .md\:mt-8{
     margin-top: 2rem;
-  }
-
-  .md\:mr-6{
-    margin-right: 1.5rem;
-  }
-
-  .md\:ml-6{
-    margin-left: 1.5rem;
   }
 
   .md\:block{
@@ -2263,10 +2253,6 @@ video {
   .md\:text-xs{
     font-size: 0.75rem;
     line-height: 1rem;
-  }
-
-  .md\:font-bold{
-    font-weight: 700;
   }
 
   .md\:leading-normal{
