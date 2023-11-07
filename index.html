@@ -1449,7 +1449,7 @@
       class="popout hidden fixed top-0 z-50 justify-center items-center px-4 w-full h-full bg-[rgba(50,50,50,0.25)]"
     >
       <div
-        class="donate-rule hidden flex-col gap-6 p-6 max-w-[610px] bg-white border-[1px] border-slate-light rounded-md"
+        class="donate-rule flex flex-col gap-6 p-6 max-w-[610px] bg-white border-[1px] border-slate-light rounded-md"
       >
         <button class="btn-close self-end">
           <img src="./src/images/btn-close.svg" alt="button-close" />
@@ -1508,7 +1508,7 @@
         </button>
       </div>
       <div
-        class="donate-form flex flex-col gap-6 p-6 max-w-[450px] bg-white border-[1px] border-slate-light rounded-md"
+        class="donate-form hidden flex-col gap-6 p-6 max-w-[450px] bg-white border-[1px] border-slate-light rounded-md"
       >
         <button class="btn-close self-end">
           <img src="./src/images/btn-close.svg" alt="button-close" />
@@ -1543,16 +1543,20 @@
           <form action="#">
             <ul class="flex flex-col gap-4 md:ml-6">
               <li class="flex items-center">
-                <span class="shrink-0 mx-4 text-black">捐款金額</span
+                <span
+                  class="shrink-0 mr-4 md:mx-4 text-black text-xs md:text-base"
+                  >捐款金額</span
                 ><input
                   class="donate-input"
-                  type="text"
+                  type="number"
                   name="dollar"
                   placeholder="999"
                 />
               </li>
               <li class="flex items-center">
-                <span class="shrink-0 mx-4 text-black">真實姓名</span
+                <span
+                  class="shrink-0 mr-4 md:mx-4 text-black text-xs md:text-base"
+                  >真實姓名</span
                 ><input
                   class="donate-input"
                   type="text"
@@ -1561,7 +1565,9 @@
                 />
               </li>
               <li class="flex items-center">
-                <span class="shrink-0 mx-4 text-black">電子郵件</span
+                <span
+                  class="shrink-0 mr-4 md:mx-4 text-black text-xs md:text-base"
+                  >電子郵件</span
                 ><input
                   class="donate-input"
                   type="text"
@@ -1570,7 +1576,9 @@
                 />
               </li>
               <li class="flex items-center">
-                <span class="shrink-0 mx-4 text-black">聯絡電話</span
+                <span
+                  class="shrink-0 mr-4 md:mx-4 text-black text-xs md:text-base"
+                  >聯絡電話</span
                 ><input
                   class="donate-input"
                   type="text"
@@ -1579,7 +1587,9 @@
                 />
               </li>
               <li class="flex items-center">
-                <span class="shrink-0 mx-4 text-black">寄送地址</span
+                <span
+                  class="shrink-0 mr-4 md:mx-4 text-black text-xs md:text-base"
+                  >寄送地址</span
                 ><input
                   class="donate-input"
                   type="text"
