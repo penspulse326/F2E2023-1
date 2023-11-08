@@ -1,8 +1,6 @@
 $(document).ready(function () {
-  carousel();
-
-  // $(".donate-tilt").tilt();
-  // $(".slogan-tilt").tilt();
+  $(".donate-tilt").tilt();
+  $(".slogan-tilt").tilt();
 
   // scroll 回到頂端按鈕
   $(".btn-goTop").on("click", (e) => {
@@ -12,9 +10,6 @@ $(document).ready(function () {
   });
 
   // scroll 到斗內
-  scrollToDonate(".btn-goDonate");
-  scrollToDonate(".nav-donate");
-
   function scrollToDonate(elementName) {
     $(elementName).on("click", (e) => {
       e.preventDefault();
@@ -23,6 +18,9 @@ $(document).ready(function () {
       $("html, body").animate({ scrollTop }, 1000);
     });
   }
+
+  scrollToDonate(".btn-goDonate");
+  scrollToDonate(".nav-donate");
 
   // scroll 快速連結
   function scrollToSectionEvent(elementName, sectionName) {
@@ -40,39 +38,89 @@ $(document).ready(function () {
 
   // donate 彈出視窗
   const main = $("main");
-  const popout = $(".popout");
+  const popoutDonate = $(".popout-donate");
+  const donateRule = $(".popout-donate-rule");
+  const donateForm = $(".popout-donate-form");
+  const donateHint = $(".popout-donate-hint");
   const btnClose = $(".btn-close");
-  const btnNext = $(".btn-next");
   const btnSubmit = $(".btn-submit");
-  const popoutRule = $(".donate-rule");
-  const form = $(".donate-form");
 
   $(".btn-donate").on("click", (e) => {
+    stopScroll();
+
     const dollar = e.target.getAttribute("dollar");
+    popoutDonate.removeClass("hidden").addClass("flex");
 
-    $("html, body").css("overflow", "hidden");
-    main.css("filter", "blur(5px)");
-    popout.removeClass("hidden").addClass("flex");
-
-    btnNext.on("click", () => {
-      popoutRule.removeClass("flex").addClass("hidden");
-      form.removeClass("hidden").addClass("flex");
-      form.find('input[name="dollar"]').val(dollar);
+    $(".btn-next").on("click", () => {
+      donateRule.removeClass("flex").addClass("hidden");
+      donateForm.removeClass("hidden").addClass("flex");
+      donateForm.find('input[name="dollar"]').val(dollar);
     });
 
-    closePopout(btnClose);
-    closePopout(btnSubmit);
+    $(".btn-submit").on("click", () => {
+      donateForm.removeClass("flex").addClass("hidden");
+      donateHint.removeClass("hidden").addClass("flex");
+    });
+
+    closePopout(btnClose, popoutDonate, donateRule, donateHint);
   });
 
-  function closePopout(element) {
-    element.on("click", () => {
-      popout.removeClass("flex").addClass("hidden");
-      main.css("filter", "blur(0)");
+  // mail 彈出視窗
+  const popoutMail = $(".popout-mail");
+  const mailForm = $(".popout-mail-form");
+  const mailHint = $(".popout-mail-hint");
 
-      $("html, body").css("overflow", "auto");
-      form.removeClass("flex").addClass("hidden");
-      popoutRule.removeClass("hidden").addClass("flex");
+  $(".btn-mail").on("click", () => {
+    stopScroll();
+
+    popoutMail.removeClass("hidden").addClass("flex");
+
+    btnSubmit.on("click", () => {
+      mailForm.removeClass("flex").addClass("hidden");
+      mailHint.removeClass("hidden").addClass("flex");
     });
+
+    closePopout(btnClose, popoutMail, mailForm, mailHint);
+  });
+
+  function closePopout(btn, block, dialog_1, dialog_2) {
+    btn.on("click", () => {
+      recoverScroll();
+
+      block.removeClass("flex").addClass("hidden");
+      dialog_2.removeClass("flex").addClass("hidden");
+      dialog_1.removeClass("hidden").addClass("flex");
+    });
+  }
+
+  // mail 送出
+  $(".btn-mail-submit").on("click", () => {
+    stopScroll();
+    $("body").append(mailPopoutElement);
+
+    $(".btn-close-hint").on("click", () => {
+      $(".mail-hint").remove();
+      recoverScroll();
+    });
+  });
+
+  carousel();
+
+  function eventStopper(e) {
+    e.preventDefault();
+  }
+
+  // 禁止滾動
+  function stopScroll() {
+    main.css("filter", "blur(5px)");
+    window.addEventListener("wheel", eventStopper, { passive: false });
+    window.addEventListener("keydown", eventStopper);
+  }
+  // 恢復滾動
+  function recoverScroll() {
+    main.css("filter", "blur(0)");
+    window.removeEventListener("wheel", eventStopper, { passive: false });
+    window.removeEventListener("keydown", eventStopper);
   }
 });
 
@@ -240,3 +288,16 @@ const policyContentText = [
     </p>
   </div>`,
 ];
+
+const mailPopoutElement = `
+  <div class="mail-hint fixed top-0 z-50 flex justify-center items-center px-4 w-full h-full bg-[rgba(50,50,50,0.25)]">
+    <div class="flex flex-col p-6 max-w-[600px] bg-white border-[1px] border-slate-light rounded-md">
+      <button class="btn-close-hint self-end">
+        <img src="./src/images/btn-close.svg" alt="button-close" />
+      </button>
+      <p class="text-pink text-xl font-bold text-center">感謝您填寫服務信箱</p>
+      <p class="mt-4 mb-4 text-black text-lg text-center">
+        我們已成功收到您的訊息，請靜待回覆。
+      </p>
+    </div>
+  </div>`;

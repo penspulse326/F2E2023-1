@@ -12,171 +12,177 @@
     <script src="./src/scripts/main.js" defer></script>
   </head>
   <body>
-    <!-- navbar -->
-    <nav class="sticky top-0 z-50 bg-white text-pink-mid tracking-widest">
-      <div class="container mx-auto">
-        <div
-          class="flex justify-between items-center box-p h-[52px] xl:h-[100px]"
-        >
-          <h1
-            class="flex items-center text-xl md:text-sm xl:text-2xl font-bold"
+    <main>
+      <!-- navbar -->
+      <nav
+        class="sticky top-0 z-50 w-full bg-white text-pink-mid tracking-widest"
+      >
+        <div class="container mx-auto">
+          <div
+            class="flex justify-between items-center box-p h-[52px] xl:h-[100px]"
           >
-            <a class="paw flex items-center" href="#"
-              ><img
-                class="mr-2 duration-300 w-6 h-6 xl:w-12 xl:h-12"
-                src="./src/images/logo-paw.svg"
-                alt="logo-paw"
-              />喵立翰</a
+            <h1
+              class="flex items-center text-xl md:text-sm xl:text-2xl font-bold"
             >
-          </h1>
-          <ul
-            class="hidden md:flex gap-4 md:gap-8 xl:gap-20 md:text-sm xl:text-base"
-          >
-            <li>
-              <a class="link-policy paw flex items-center" href="#"
+              <a class="paw flex items-center" href="#"
                 ><img
-                  class="hidden md:block mr-2 w-5 h-5 duration-300"
+                  class="mr-2 duration-300 w-6 h-6 xl:w-12 xl:h-12"
                   src="./src/images/logo-paw.svg"
-                  alt="paw"
-                />喵の政見</a
+                  alt="logo-paw"
+                />喵立翰</a
               >
-            </li>
-            <li>
-              <a class="link-news paw flex items-center" href="#"
-                ><img
-                  class="hidden md:block mr-2 w-5 h-5 duration-300"
-                  src="./src/images/logo-paw.svg"
-                  alt="paw"
-                />喵の活動</a
-              >
-            </li>
-            <li>
-              <a class="link-donate paw flex items-center" href="#"
-                ><img
-                  class="hidden md:block mr-2 w-5 h-5 duration-300"
-                  src="./src/images/logo-paw.svg"
-                  alt="paw"
-                />抖內喵喵</a
-              >
-            </li>
-          </ul>
-          <ul class="hidden md:flex items-center gap-[15px]">
-            <li>
-              <button
-                class="nav-donate xl:mr-6 px-3 xl:px-7 py-1 xl:py-[6px] bg-pink-mid text-white text-xs xl:text-base font-semibold border-2 border-pink-mid rounded-[30px] duration-300 hover:bg-white hover:text-pink-mid"
-              >
-                小額贊助
-              </button>
-            </li>
-            <li
-              class="hidden xl:block p-2 w-8 h-8 bg-white border-gray-light border-[1px] rounded-[50%] duration-300 hover:scale-150"
-            >
-              <a class="flex justify-center items-center" href="#"
-                ><img src="./src/images/icon-facebook.svg" alt="link-facebook"
-              /></a>
-            </li>
-            <li
-              class="hidden xl:block p-2 w-8 h-8 bg-white border-gray-light border-[1px] rounded-[50%] duration-300 hover:scale-150"
-            >
-              <a class="flex justify-center items-center" href="#"
-                ><img src="./src/images/icon-twitter.svg" alt="link-twitter"
-              /></a>
-            </li>
-            <li
-              class="hidden xl:block p-2 w-8 h-8 bg-white border-gray-light border-[1px] rounded-[50%] duration-300 hover:scale-150"
-            >
-              <a class="flex justify-center items-center" href="#"
-                ><img src="./src/images/icon-youtube.svg" alt="link-youtube"
-              /></a>
-            </li>
-            <li
-              class="hidden xl:block p-2 w-8 h-8 bg-white border-gray-light border-[1px] rounded-[50%] duration-300 hover:scale-150"
-            >
-              <a class="flex justify-center items-center" href="#"
-                ><img src="./src/images/icon-linkedin.svg" alt="link-linkedin"
-              /></a>
-            </li>
-          </ul>
-          <label class="relative md:hidden">
-            <input class="burger-button hidden" type="checkbox" />
-            <img
-              class="duration-300"
-              src="./src/images/menu-burger.svg"
-              alt="menu-dropdown-button"
-            />
+            </h1>
             <ul
-              class="burger-list hidden absolute right-0 mt-1 w-56 bg-white border-[1px] border-slate-100 rounded-md text-pink-mid text-sm whitespace-nowrap"
+              class="hidden md:flex gap-4 md:gap-8 xl:gap-20 md:text-sm xl:text-base"
             >
               <li>
-                <a
-                  class="link-policy flex justify-between items-center p-3"
-                  href="#"
+                <a class="link-policy paw flex items-center" href="#"
+                  ><img
+                    class="hidden md:block mr-2 w-5 h-5 duration-300"
+                    src="./src/images/logo-paw.svg"
+                    alt="paw"
+                  />喵の政見</a
                 >
-                  <div class="flex items-center">
-                    <img
-                      class="mr-2 w-4 h-4"
-                      src="./src/images/logo-paw.svg"
-                      alt="paw"
-                    />喵立翰主張
-                  </div>
-                  <img src="./src/images/menu-arrow.svg" alt="menu-arrow"
-                /></a>
               </li>
               <li>
-                <a
-                  class="link-news flex justify-between items-center p-3"
-                  href="#"
+                <a class="link-news paw flex items-center" href="#"
+                  ><img
+                    class="hidden md:block mr-2 w-5 h-5 duration-300"
+                    src="./src/images/logo-paw.svg"
+                    alt="paw"
+                  />喵の活動</a
                 >
-                  <div class="flex items-center">
-                    <img
-                      class="mr-2 w-4 h-4"
-                      src="./src/images/logo-paw.svg"
-                      alt="paw"
-                    />活動快報
-                  </div>
-                  <img src="./src/images/menu-arrow.svg" alt="menu-arrow"
-                /></a>
               </li>
               <li>
-                <a
-                  class="link-donate flex justify-between items-center p-3"
-                  href="#"
-                >
-                  <div class="flex items-center">
-                    <img
-                      class="mr-2 w-4 h-4"
-                      src="./src/images/logo-paw.svg"
-                      alt="paw"
-                    />線上捐款
-                  </div>
-                  <img src="./src/images/menu-arrow.svg" alt="menu-arrow"
-                /></a>
-              </li>
-              <li>
-                <a class="flex justify-between items-center p-3" href="#">
-                  <div class="flex items-center">
-                    <img
-                      class="mr-2 w-4 h-4"
-                      src="./src/images/logo-paw.svg"
-                      alt="paw"
-                    />喵服務信箱
-                  </div>
-                  <img src="./src/images/menu-arrow.svg" alt="menu-arrow"
-                /></a>
-              </li>
-              <li class="p-3 border-t-[1px] border-slate-100">
-                <a
-                  class="link-donate inline-block px-[30px] py-[6px] bg-pink-mid rounded-xl text-white"
-                  href="#"
-                  >小額贊助</a
+                <a class="link-donate paw flex items-center" href="#"
+                  ><img
+                    class="hidden md:block mr-2 w-5 h-5 duration-300"
+                    src="./src/images/logo-paw.svg"
+                    alt="paw"
+                  />抖內喵喵</a
                 >
               </li>
             </ul>
-          </label>
+            <ul class="hidden md:flex items-center gap-[15px]">
+              <li>
+                <button
+                  class="nav-donate xl:mr-6 px-3 xl:px-7 py-1 xl:py-[6px] bg-pink-mid text-white text-xs xl:text-base font-semibold border-2 border-pink-mid rounded-[30px] duration-300 hover:bg-white hover:text-pink-mid"
+                >
+                  小額贊助
+                </button>
+              </li>
+              <li
+                class="hidden xl:block p-2 w-8 h-8 bg-white border-gray-light border-[1px] rounded-[50%] duration-300 hover:scale-150"
+              >
+                <a class="flex justify-center items-center" href="#"
+                  ><img
+                    src="./src/images/icon-facebook.svg"
+                    alt="link-facebook"
+                /></a>
+              </li>
+              <li
+                class="hidden xl:block p-2 w-8 h-8 bg-white border-gray-light border-[1px] rounded-[50%] duration-300 hover:scale-150"
+              >
+                <a class="flex justify-center items-center" href="#"
+                  ><img src="./src/images/icon-twitter.svg" alt="link-twitter"
+                /></a>
+              </li>
+              <li
+                class="hidden xl:block p-2 w-8 h-8 bg-white border-gray-light border-[1px] rounded-[50%] duration-300 hover:scale-150"
+              >
+                <a class="flex justify-center items-center" href="#"
+                  ><img src="./src/images/icon-youtube.svg" alt="link-youtube"
+                /></a>
+              </li>
+              <li
+                class="hidden xl:block p-2 w-8 h-8 bg-white border-gray-light border-[1px] rounded-[50%] duration-300 hover:scale-150"
+              >
+                <a class="flex justify-center items-center" href="#"
+                  ><img
+                    src="./src/images/icon-linkedin.svg"
+                    alt="link-linkedin"
+                /></a>
+              </li>
+            </ul>
+            <label class="relative md:hidden">
+              <input class="burger-button hidden" type="checkbox" />
+              <img
+                class="duration-300"
+                src="./src/images/menu-burger.svg"
+                alt="menu-dropdown-button"
+              />
+              <ul
+                class="burger-list hidden absolute right-0 mt-1 w-56 bg-white border-[1px] border-slate-100 rounded-md text-pink-mid text-sm whitespace-nowrap"
+              >
+                <li>
+                  <a
+                    class="link-policy flex justify-between items-center p-3"
+                    href="#"
+                  >
+                    <div class="flex items-center">
+                      <img
+                        class="mr-2 w-4 h-4"
+                        src="./src/images/logo-paw.svg"
+                        alt="paw"
+                      />喵立翰主張
+                    </div>
+                    <img src="./src/images/menu-arrow.svg" alt="menu-arrow"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    class="link-news flex justify-between items-center p-3"
+                    href="#"
+                  >
+                    <div class="flex items-center">
+                      <img
+                        class="mr-2 w-4 h-4"
+                        src="./src/images/logo-paw.svg"
+                        alt="paw"
+                      />活動快報
+                    </div>
+                    <img src="./src/images/menu-arrow.svg" alt="menu-arrow"
+                  /></a>
+                </li>
+                <li>
+                  <a
+                    class="link-donate flex justify-between items-center p-3"
+                    href="#"
+                  >
+                    <div class="flex items-center">
+                      <img
+                        class="mr-2 w-4 h-4"
+                        src="./src/images/logo-paw.svg"
+                        alt="paw"
+                      />線上捐款
+                    </div>
+                    <img src="./src/images/menu-arrow.svg" alt="menu-arrow"
+                  /></a>
+                </li>
+                <li>
+                  <a class="flex justify-between items-center p-3" href="#">
+                    <div class="flex items-center">
+                      <img
+                        class="mr-2 w-4 h-4"
+                        src="./src/images/logo-paw.svg"
+                        alt="paw"
+                      />喵服務信箱
+                    </div>
+                    <img src="./src/images/menu-arrow.svg" alt="menu-arrow"
+                  /></a>
+                </li>
+                <li class="p-3 border-t-[1px] border-slate-100">
+                  <a
+                    class="link-donate inline-block px-[30px] py-[6px] bg-pink-mid rounded-xl text-white"
+                    href="#"
+                    >小額贊助</a
+                  >
+                </li>
+              </ul>
+            </label>
+          </div>
         </div>
-      </div>
-    </nav>
-    <main>
+      </nav>
       <!-- header -->
       <header
         class="xl:mt-4 xl:mb-2 bg-pink-light xl:bg-transparent overflow-hidden xl:overflow-visible"
@@ -1010,7 +1016,7 @@
                 一同為我們的未來打造更美好<br />
               </p>
               <button
-                class="md:hidden col-span-2 col-start-2 mx-auto py-4 w-40 bg-brown border-[1px] border-black rounded-md text-black text-xs"
+                class="btn-mail md:hidden col-span-2 col-start-2 mx-auto py-4 w-40 bg-brown border-[1px] border-black rounded-md text-black text-xs"
                 type="button"
               >
                 填寫服務信箱
@@ -1121,8 +1127,8 @@
                   </li>
                 </ul>
                 <button
-                  class="block mt-4 xl:mt-7 mx-auto py-3 w-full xl:w-[75%] bg-brown rounded-md text-black"
-                  type="submit"
+                  class="btn-mail-submit block mt-4 xl:mt-7 mx-auto py-3 w-full xl:w-[75%] bg-brown rounded-md text-black hover:bg-brown-light"
+                  type="button"
                 >
                   送出訊息
                 </button>
@@ -1445,11 +1451,12 @@
         <span class="mt-4 md:mt-6 text-[10px] md:text-base">© 2023 喵立翰</span>
       </footer>
     </main>
+    <!-- donate popout-->
     <div
-      class="popout hidden fixed top-0 z-50 justify-center items-center px-4 w-full h-full bg-[rgba(50,50,50,0.25)]"
+      class="popout-donate hidden fixed top-0 z-50 justify-center items-center px-4 w-full h-full bg-[rgba(50,50,50,0.25)]"
     >
       <div
-        class="donate-rule flex flex-col gap-6 p-6 max-w-[610px] bg-white border-[1px] border-slate-light rounded-md"
+        class="popout-donate-rule flex flex-col gap-6 p-6 max-w-[610px] bg-white border-[1px] border-slate-light rounded-md"
       >
         <button class="btn-close self-end">
           <img src="./src/images/btn-close.svg" alt="button-close" />
@@ -1508,7 +1515,7 @@
         </button>
       </div>
       <div
-        class="donate-form hidden flex-col gap-6 p-6 max-w-[450px] bg-white border-[1px] border-slate-light rounded-md"
+        class="popout-donate-form hidden flex-col gap-6 p-6 max-w-[450px] bg-white border-[1px] border-slate-light rounded-md"
       >
         <button class="btn-close self-end">
           <img src="./src/images/btn-close.svg" alt="button-close" />
@@ -1543,20 +1550,16 @@
           <form action="#">
             <ul class="flex flex-col gap-4 md:ml-6">
               <li class="flex items-center">
-                <span
-                  class="shrink-0 mr-4 md:mx-4 text-black text-xs md:text-base"
-                  >捐款金額</span
+                <span class="shrink-0 mx-4 text-black">捐款金額</span
                 ><input
                   class="donate-input"
-                  type="number"
+                  type="text"
                   name="dollar"
                   placeholder="999"
                 />
               </li>
               <li class="flex items-center">
-                <span
-                  class="shrink-0 mr-4 md:mx-4 text-black text-xs md:text-base"
-                  >真實姓名</span
+                <span class="shrink-0 mx-4 text-black">真實姓名</span
                 ><input
                   class="donate-input"
                   type="text"
@@ -1565,9 +1568,7 @@
                 />
               </li>
               <li class="flex items-center">
-                <span
-                  class="shrink-0 mr-4 md:mx-4 text-black text-xs md:text-base"
-                  >電子郵件</span
+                <span class="shrink-0 mx-4 text-black">電子郵件</span
                 ><input
                   class="donate-input"
                   type="text"
@@ -1576,9 +1577,7 @@
                 />
               </li>
               <li class="flex items-center">
-                <span
-                  class="shrink-0 mr-4 md:mx-4 text-black text-xs md:text-base"
-                  >聯絡電話</span
+                <span class="shrink-0 mx-4 text-black">聯絡電話</span
                 ><input
                   class="donate-input"
                   type="text"
@@ -1587,9 +1586,7 @@
                 />
               </li>
               <li class="flex items-center">
-                <span
-                  class="shrink-0 mr-4 md:mx-4 text-black text-xs md:text-base"
-                  >寄送地址</span
+                <span class="shrink-0 mx-4 text-black">寄送地址</span
                 ><input
                   class="donate-input"
                   type="text"
@@ -1599,10 +1596,113 @@
               </li>
             </ul>
           </form>
-          <button class="btn-form btn-submit self-end" href="#">
+          <button class="btn-submit btn-form self-end" href="#">
             確認捐款
           </button>
         </div>
+      </div>
+      <div
+        class="popout-donate-hint hidden flex-col p-6 max-w-[425px] md:max-w-[600px] bg-white border-[1px] border-slate-light rounded-md"
+      >
+        <button class="btn-close self-end">
+          <img src="./src/images/btn-close.svg" alt="button-close" />
+        </button>
+        <p class="text-pink md:text-xl font-bold text-center">
+          感謝您大力贊助！
+        </p>
+        <p
+          class="flex items-center mt-4 mb-4 text-black text-sm md:text-base text-center"
+        >
+          <img
+            class="inline-block mr-2 w-6 h-6"
+            src="./src/images/logo-paw.svg"
+            alt="paw"
+          />為了喵星人，我們會奮戰到底！
+        </p>
+      </div>
+    </div>
+    <!-- mail popout-->
+    <div
+      class="popout-mail fixed top-0 z-50 hidden justify-center items-center px-4 w-full h-full bg-[rgba(50,50,50,0.25)]"
+    >
+      <div
+        class="popout-mail-form flex flex-col gap-6 p-6 max-w-[425px] bg-white border-[1px] border-slate-light rounded-md"
+      >
+        <button class="btn-close self-end">
+          <img src="./src/images/btn-close.svg" alt="button-close" />
+        </button>
+        <div class="flex flex-col gap-4">
+          <div>
+            <h3
+              class="mb-2 text-pink text-sm md:text-base xl:font-bold tracking-wider"
+            >
+              您的聲音，我們的行動！
+            </h3>
+            <p class="mb-4 text-black text-sm">
+              歡迎填寫服務信箱，我們將儘速回覆
+            </p>
+          </div>
+          <form action="#">
+            <ul class="flex flex-col gap-4">
+              <li class="flex items-center">
+                <span class="shrink-0 mx-4 text-black text-xs"
+                  >您的姓名<span class="text-pink">*</span></span
+                ><input
+                  class="donate-input"
+                  type="text"
+                  name="name"
+                  placeholder="請輸入您的姓名"
+                />
+              </li>
+              <li class="flex items-center">
+                <span class="shrink-0 mx-4 text-black text-xs"
+                  >您的手機<span class="text-pink">*</span></span
+                ><input
+                  class="donate-input"
+                  type="text"
+                  name="phone"
+                  placeholder="請輸入您的手機號碼"
+                />
+              </li>
+              <li class="flex items-center">
+                <span class="shrink-0 mx-4 text-black text-xs"
+                  >您的信箱<span class="text-pink">*</span></span
+                ><input
+                  class="donate-input"
+                  type="text"
+                  name="mail"
+                  placeholder="請輸入您的信箱"
+                />
+              </li>
+              <li class="flex items-start">
+                <span class="shrink-0 mx-4 text-black text-xs"
+                  >您的訊息<span class="text-pink">*</span></span
+                ><textarea
+                  class="donate-input h-20"
+                  type="text"
+                  name="phone"
+                  placeholder="請輸入您的訊息"
+                ></textarea>
+              </li>
+            </ul>
+          </form>
+          <button class="btn-form btn-submit self-end" href="#">
+            送出訊息
+          </button>
+        </div>
+      </div>
+      <div
+        class="popout-mail-hint hidden flex-col p-6 max-w-[425px] bg-white border-[1px] border-slate-light rounded-md"
+      >
+        <button class="btn-close self-end">
+          <img src="./src/images/btn-close.svg" alt="button-close" />
+        </button>
+        <p class="text-pink text-sm md:text-base font-bold text-center">
+          感謝您填寫服務信箱
+        </p>
+        <p class="mt-4 mb-4 text-black text-sm md:text-base text-center">
+          我們已成功收到您的訊息，請靜待回覆。
+        </p>
       </div>
     </div>
   </body>
