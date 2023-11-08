@@ -8,6 +8,10 @@
   * {
     @apply font-sans;
   }
+
+  form {
+    @apply m-0;
+  }
 }
 
 @layer components {
@@ -62,12 +66,20 @@
     @apply w-[100px] md:w-40 xl:w-[200px] h-[100px] md:h-40 xl:h-[200px];
   }
 
+  .card-donate:hover img {
+    @apply shadow-sm;
+  }
+
+  .card-donate:hover button {
+    @apply shadow-xl;
+  }
+
   .btn-donate {
     @apply block mt-2 md:mt-4 py-2 xl:py-3 bg-black w-[100px] md:w-[120px] xl:w-36 text-white text-[11px] md:text-xs xl:text-base rounded-md hover:bg-gray-900 duration-300 tracking-widest;
   }
 
   .btn-form {
-    @apply block px-4 py-2 bg-black text-white rounded-md hover:bg-gray-900 duration-300;
+    @apply block px-4 py-2 bg-black text-white text-sm md:text-base rounded-md hover:bg-gray-900 duration-300;
   }
 
   .form-input {

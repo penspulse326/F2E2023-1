@@ -1,0 +1,81 @@
+<link rel="stylesheet" href="../../dist/output.css" />
+<!-- main popout -->
+<div
+  class="popout-mail fixed top-0 z-50 justify-center items-center px-4 w-full h-full bg-[rgba(50,50,50,0.25)]"
+>
+  <div
+    class="popout-mail-form flex flex-col gap-6 p-6 max-w-[425px] bg-white border-[1px] border-slate-light rounded-md"
+  >
+    <button class="btn-close self-end">
+      <img src="../images/btn-close.svg" alt="button-close" />
+    </button>
+    <div class="flex flex-col gap-4">
+      <div>
+        <h3
+          class="mb-2 text-pink text-sm md:text-base xl:font-bold tracking-wider"
+        >
+          您的聲音，我們的行動！
+        </h3>
+        <p class="mb-4 text-black text-sm">歡迎填寫服務信箱，我們將儘速回覆</p>
+      </div>
+      <form action="#">
+        <ul class="flex flex-col gap-4">
+          <li class="flex items-center">
+            <span class="shrink-0 mx-4 text-black text-xs"
+              >您的姓名<span class="text-pink">*</span></span
+            ><input
+              class="donate-input"
+              type="text"
+              name="name"
+              placeholder="請輸入您的姓名"
+            />
+          </li>
+          <li class="flex items-center">
+            <span class="shrink-0 mx-4 text-black text-xs"
+              >您的手機<span class="text-pink">*</span></span
+            ><input
+              class="donate-input"
+              type="text"
+              name="phone"
+              placeholder="請輸入您的手機號碼"
+            />
+          </li>
+          <li class="flex items-center">
+            <span class="shrink-0 mx-4 text-black text-xs"
+              >您的信箱<span class="text-pink">*</span></span
+            ><input
+              class="donate-input"
+              type="text"
+              name="mail"
+              placeholder="請輸入您的信箱"
+            />
+          </li>
+          <li class="flex items-start">
+            <span class="shrink-0 mx-4 text-black text-xs"
+              >您的訊息<span class="text-pink">*</span></span
+            ><textarea
+              class="donate-input h-20"
+              type="text"
+              name="phone"
+              placeholder="請輸入您的訊息"
+            ></textarea>
+          </li>
+        </ul>
+      </form>
+      <button class="btn-form btn-submit self-end" href="#">送出訊息</button>
+    </div>
+  </div>
+  <div
+    class="mail-hint flex flex-col p-6 max-w-[425px] bg-white border-[1px] border-slate-light rounded-md"
+  >
+    <button class="btn-close self-end">
+      <img src="../images/btn-close.svg" alt="button-close" />
+    </button>
+    <p class="text-pink text-sm md:text-base font-bold text-center">
+      感謝您填寫服務信箱
+    </p>
+    <p class="mt-4 mb-8 text-black text-sm md:text-base text-center">
+      我們已成功收到您的訊息，請靜待回覆。
+    </p>
+  </div>
+</div>
