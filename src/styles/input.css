@@ -165,9 +165,7 @@
 }
 
 @media (max-width: 1279px) {
-  .header-image {
-    content: url("../src/images/header-image-sm.svg");
-  }
+
 
   .carousel-item-1 img {
     content: url("../src/images/policy-1-md.jpg");
