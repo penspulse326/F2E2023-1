@@ -1066,6 +1066,54 @@ form{
   top: 2rem;
 }
 
+.-top-4{
+  top: -1rem;
+}
+
+.top-10{
+  top: 2.5rem;
+}
+
+.top-20{
+  top: 5rem;
+}
+
+.-left-10{
+  left: -2.5rem;
+}
+
+.-left-12{
+  left: -3rem;
+}
+
+.-left-16{
+  left: -4rem;
+}
+
+.-left-8{
+  left: -2rem;
+}
+
+.top-12{
+  top: 3rem;
+}
+
+.-left-4{
+  left: -1rem;
+}
+
+.-left-2{
+  left: -0.5rem;
+}
+
+.-left-3{
+  left: -0.75rem;
+}
+
+.top-4{
+  top: 1rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -1186,6 +1234,22 @@ form{
   margin-top: 1rem;
 }
 
+.ml-10{
+  margin-left: 2.5rem;
+}
+
+.mt-6{
+  margin-top: 1.5rem;
+}
+
+.ml-32{
+  margin-left: 8rem;
+}
+
+.mt-3{
+  margin-top: 0.75rem;
+}
+
 .block{
   display: block;
 }
@@ -1300,6 +1364,10 @@ form{
 
 .w-full{
   width: 100%;
+}
+
+.w-\[80\%\]{
+  width: 80%;
 }
 
 .max-w-\[410px\]{
@@ -1683,12 +1751,41 @@ form{
   padding-bottom: 6px;
 }
 
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pb-10{
   padding-bottom: 2.5rem;
 }
 
 .pt-6{
   padding-top: 1.5rem;
+}
+
+.pl-10{
+  padding-left: 2.5rem;
+}
+
+.pl-20{
+  padding-left: 5rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
+}
+
+.pt-9{
+  padding-top: 2.25rem;
+}
+
+.pl-24{
+  padding-left: 6rem;
+}
+
+.pl-\[88px\]{
+  padding-left: 88px;
 }
 
 .text-center{
@@ -1902,10 +1999,6 @@ form{
 }
 
 @media (max-width: 1279px) {
-  .header-image {
-    content: url("../src/images/header-image-sm.svg");
-  }
-
   .carousel-item-1 img {
     content: url("../src/images/policy-1-md.jpg");
   }
@@ -2079,6 +2172,54 @@ form{
     bottom: 0px;
   }
 
+  .md\:top-10{
+    top: 2.5rem;
+  }
+
+  .md\:-left-8{
+    left: -2rem;
+  }
+
+  .md\:-left-2{
+    left: -0.5rem;
+  }
+
+  .md\:-left-0{
+    left: -0px;
+  }
+
+  .md\:top-8{
+    top: 2rem;
+  }
+
+  .md\:left-1{
+    left: 0.25rem;
+  }
+
+  .md\:left-2{
+    left: 0.5rem;
+  }
+
+  .md\:top-4{
+    top: 1rem;
+  }
+
+  .md\:top-0{
+    top: 0px;
+  }
+
+  .md\:top-2{
+    top: 0.5rem;
+  }
+
+  .md\:left-3{
+    left: 0.75rem;
+  }
+
+  .md\:left-4{
+    left: 1rem;
+  }
+
   .md\:order-2{
     order: 2;
   }
@@ -2145,6 +2286,10 @@ form{
     margin-top: 2rem;
   }
 
+  .md\:mt-2{
+    margin-top: 0.5rem;
+  }
+
   .md\:block{
     display: block;
   }
@@ -2183,6 +2328,18 @@ form{
 
   .md\:w-full{
     width: 100%;
+  }
+
+  .md\:w-\[80\%\]{
+    width: 80%;
+  }
+
+  .md\:w-\[90\%\]{
+    width: 90%;
+  }
+
+  .md\:w-\[85\%\]{
+    width: 85%;
   }
 
   .md\:max-w-\[600px\]{
@@ -2252,6 +2409,30 @@ form{
     padding-top: 2rem;
   }
 
+  .md\:pl-16{
+    padding-left: 4rem;
+  }
+
+  .md\:pt-6{
+    padding-top: 1.5rem;
+  }
+
+  .md\:pt-3{
+    padding-top: 0.75rem;
+  }
+
+  .md\:pl-20{
+    padding-left: 5rem;
+  }
+
+  .md\:pt-2{
+    padding-top: 0.5rem;
+  }
+
+  .md\:pr-0{
+    padding-right: 0px;
+  }
+
   .md\:text-left{
     text-align: left;
   }
@@ -2279,19 +2460,14 @@ form{
     line-height: 1.25rem;
   }
 
-  .md\:text-xs{
-    font-size: 0.75rem;
-    line-height: 1rem;
-  }
-
-  .md\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .md\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .md\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
   .md\:leading-normal{
@@ -2305,6 +2481,14 @@ form{
 }
 
 @media (min-width: 1024px){
+  .lg\:left-0{
+    left: 0px;
+  }
+
+  .lg\:pl-\[88px\]{
+    padding-left: 88px;
+  }
+
   .lg\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -2358,6 +2542,10 @@ form{
 
   .xl\:top-auto{
     top: auto;
+  }
+
+  .xl\:-top-4{
+    top: -1rem;
   }
 
   .xl\:order-\[0\]{
@@ -2454,12 +2642,12 @@ form{
     margin-top: 2rem;
   }
 
-  .xl\:mt-\[116px\]{
-    margin-top: 116px;
-  }
-
   .xl\:mt-\[86px\]{
     margin-top: 86px;
+  }
+
+  .xl\:mt-9{
+    margin-top: 2.25rem;
   }
 
   .xl\:block{
@@ -2536,6 +2724,10 @@ form{
 
   .xl\:w-auto{
     width: auto;
+  }
+
+  .xl\:w-full{
+    width: 100%;
   }
 
   .xl\:grid-cols-10{
@@ -2703,6 +2895,10 @@ form{
     padding-top: 2.25rem;
   }
 
+  .xl\:pl-\[88px\]{
+    padding-left: 88px;
+  }
+
   .xl\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
@@ -2753,6 +2949,10 @@ form{
 
   .\32xl\:-right-10{
     right: -2.5rem;
+  }
+
+  .\32xl\:mt-8{
+    margin-top: 2rem;
   }
 
   .\32xl\:text-base{
